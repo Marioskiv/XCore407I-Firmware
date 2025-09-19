@@ -1,3 +1,9 @@
 [submodule "resources/examples/st/STM32CubeF4"]
 	path = resources/examples/st/STM32CubeF4
 	url = https://github.com/STMicroelectronics/STM32CubeF4.git
+[submodule "Remora-OS6/Firmware/FirmwareSource/Remora-OS6/st/STM32CubeF4"]
+	path = Remora-OS6/Firmware/FirmwareSource/Remora-OS6/st/STM32CubeF4
+	url = https://github.com/STMicroelectronics/STM32CubeF4.git
+[submodule "XCore407I-Firmware/st/STM32CubeF4"]
+	path = XCore407I-Firmware/st/STM32CubeF4
+	url = https://github.com/STMicroelectronics/STM32CubeF4.git
