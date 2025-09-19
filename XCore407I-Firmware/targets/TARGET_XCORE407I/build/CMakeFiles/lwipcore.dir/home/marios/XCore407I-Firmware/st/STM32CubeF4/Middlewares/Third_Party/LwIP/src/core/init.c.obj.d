@@ -1,0 +1,62 @@
+CMakeFiles/lwipcore.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/core/init.c.obj: \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/core/init.c \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
+ /home/marios/XCore407I-Firmware/targets/TARGET_XCORE407I/lwip_port/lwipopts.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/arch.h \
+ /home/marios/XCore407I-Firmware/targets/TARGET_XCORE407I/lwip_port/arch/cc.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h \
+ /usr/include/newlib/stdio.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/cdefs.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h \
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/types.h \
+ /usr/include/newlib/sys/_stdint.h \
+ /usr/include/newlib/sys/_pthreadtypes.h \
+ /usr/include/newlib/machine/types.h /usr/include/newlib/sys/stdio.h \
+ /usr/include/newlib/inttypes.h /usr/include/newlib/sys/_intsup.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.1/include-fixed/limits.h \
+ /usr/include/newlib/ctype.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/init.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/stats.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/mem.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/memp.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/priv/memp_std.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/priv/memp_priv.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/priv/mem_priv.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/sys.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/pbuf.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/err.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/netif.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/ip_addr.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/def.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/ip4_addr.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/ip6_addr.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/def.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/ip.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/ip4.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip4.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/raw.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/udp.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/priv/tcp_priv.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/igmp.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/dns.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/etharp.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/prot/ethernet.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/prot/ieee.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/nd6.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/mld6.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/lwip/api.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/netif/ppp/ppp_opts.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include/netif/ppp/ppp_impl.h
