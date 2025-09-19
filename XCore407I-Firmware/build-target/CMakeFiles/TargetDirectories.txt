@@ -1,0 +1,4 @@
+/home/marios/XCore407I-Firmware/build-target/CMakeFiles/XCORE407I_FIRMWARE.dir
+/home/marios/XCore407I-Firmware/build-target/CMakeFiles/lwipcore.dir
+/home/marios/XCore407I-Firmware/build-target/CMakeFiles/edit_cache.dir
+/home/marios/XCore407I-Firmware/build-target/CMakeFiles/rebuild_cache.dir

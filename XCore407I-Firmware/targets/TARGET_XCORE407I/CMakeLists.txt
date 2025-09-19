@@ -1,13 +1,40 @@
 cmake_minimum_required(VERSION 3.16)
-project(XCORE407I_FIRMWARE C CXX ASM)
 
-# Ensure try-compile does not attempt to link full hosted executable (newlib _exit issue)
-set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
-set(CMAKE_EXE_LINKER_FLAGS_INIT "-nostdlib")
-
+# Configure cross toolchain & try-compile BEFORE project()
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_PROCESSOR arm)
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
+
+# Prefer user toolchain if already in cache; otherwise find arm-none-eabi
+if(NOT DEFINED CMAKE_C_COMPILER)
+  find_program(ARM_GCC arm-none-eabi-gcc)
+  if(NOT ARM_GCC)
+    message(FATAL_ERROR "arm-none-eabi-gcc not found in PATH")
+  endif()
+  set(CMAKE_C_COMPILER ${ARM_GCC} CACHE FILEPATH "")
+endif()
+if(NOT DEFINED CMAKE_CXX_COMPILER)
+  find_program(ARM_GPP arm-none-eabi-g++)
+  if(NOT ARM_GPP)
+    message(FATAL_ERROR "arm-none-eabi-g++ not found in PATH")
+  endif()
+  set(CMAKE_CXX_COMPILER ${ARM_GPP} CACHE FILEPATH "")
+endif()
+if(NOT DEFINED CMAKE_ASM_COMPILER)
+  set(CMAKE_ASM_COMPILER ${CMAKE_C_COMPILER} CACHE FILEPATH "")
+endif()
+
+set(CMAKE_C_FLAGS_INIT "-mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard")
+set(CMAKE_CXX_FLAGS_INIT "-mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard")
+# NOTE: Do not set CMAKE_EXE_LINKER_FLAGS_INIT with --specs here; it's supplied exactly once via arm_flags
+
+project(XCORE407I_FIRMWARE C CXX ASM)
+
+# Ensure --specs=nosys.specs applied exactly once (avoid duplicate spec rename error)
+if (CMAKE_EXE_LINKER_FLAGS MATCHES "nosys.specs")
+  string(REGEX REPLACE "(^| )--specs=nosys\\.specs" "" CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS}")
+endif()
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} --specs=nosys.specs" CACHE STRING "" FORCE)
 
 # Try to locate ARM embedded toolchain if not explicitly provided
 if (NOT CMAKE_C_COMPILER MATCHES "arm-none-eabi-gcc")
@@ -65,7 +92,10 @@ add_executable(${PROJECT_NAME}
   ${REMORA_SRC_DIR}/stepgen.c
   ${REMORA_SRC_DIR}/motion_io.c
   ${REMORA_SRC_DIR}/jog.c
+  ${REMORA_SRC_DIR}/homing.c
+  ${REMORA_SRC_DIR}/config_store.c
   ${REMORA_SRC_DIR}/encoder.c
+  ${REMORA_SRC_DIR}/auth.c
   ${CUBE_ROOT}/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
   syscalls.c
 )
@@ -103,12 +133,8 @@ set(HAL_SOURCES
 
 target_sources(${PROJECT_NAME} PRIVATE ${HAL_SOURCES})
 
-# Compiler flags (target-scoped to avoid quoting artifacts in flags.make)
-set(COMMON_FLAGS
-  -mcpu=cortex-m4
-  -mthumb
-  -mfpu=fpv4-sp-d16
-  -mfloat-abi=hard
+# Common optimization & warning flags (arch/float already in initial flags)
+set(COMMON_NONARCH_FLAGS
   -O2
   -ffunction-sections
   -fdata-sections
@@ -118,9 +144,28 @@ set(COMMON_FLAGS
   -Wextra
 )
 
-target_compile_options(${PROJECT_NAME} PRIVATE ${COMMON_FLAGS})
-target_compile_definitions(${PROJECT_NAME} PRIVATE STM32F407xx USE_HAL_DRIVER)
+# Interface target to propagate identical compile & link flags to all consumers
+add_library(arm_flags INTERFACE)
+option(REMORA_STRICT "Treat warnings as errors" ON)
+target_compile_options(arm_flags INTERFACE ${COMMON_NONARCH_FLAGS})
+
+# Apply stricter pedantic flags only to our firmware target (exclude 3rd party libs)
+if(REMORA_STRICT)
+  target_compile_options(${PROJECT_NAME} PRIVATE -Werror)
+endif()
+target_compile_options(${PROJECT_NAME} PRIVATE -Wshadow -Wimplicit-fallthrough)
+target_link_options(arm_flags INTERFACE
+  -mcpu=cortex-m4
+  -mthumb
+  -mfpu=fpv4-sp-d16
+  -mfloat-abi=hard
+  -Wl,--gc-sections
+  -Wl,--print-memory-usage
+)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE arm_flags)
 target_compile_options(${PROJECT_NAME} PRIVATE $<$<COMPILE_LANGUAGE:CXX>:-fno-exceptions -fno-rtti>)
+target_compile_definitions(${PROJECT_NAME} PRIVATE STM32F407xx USE_HAL_DRIVER)
 set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -mcpu=cortex-m4 -mthumb")
 
 # Linker script
@@ -131,7 +176,7 @@ if (NOT CMAKE_OBJCOPY)
   message(WARNING "objcopy not found; .bin generation will be skipped")
 endif()
 
-target_link_options(${PROJECT_NAME} PRIVATE -T${LINKER_SCRIPT} -Wl,--gc-sections -Wl,-Map=${PROJECT_NAME}.map -nostartfiles -Wl,--print-memory-usage)
+target_link_options(${PROJECT_NAME} PRIVATE -T${LINKER_SCRIPT} -nostartfiles -Wl,-Map=${PROJECT_NAME}.map)
 
 # Post-build binary
 if (CMAKE_OBJCOPY)
@@ -165,6 +210,7 @@ set(LWIP_CORE_SRC
   ${LWIP_ROOT}/src/core/ipv4/etharp.c
   ${LWIP_ROOT}/src/core/udp.c
   ${LWIP_ROOT}/src/netif/ethernet.c
+  ${LWIP_ROOT}/src/core/ipv4/dhcp.c
 )
 
 add_library(lwipcore STATIC ${LWIP_CORE_SRC} lwip_port/sys_arch.c)
@@ -175,3 +221,4 @@ target_include_directories(lwipcore PUBLIC
 target_compile_definitions(lwipcore PUBLIC NO_SYS=1 LWIP_TIMEVAL_PRIVATE=1)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE lwipcore)
+target_link_libraries(lwipcore PUBLIC arm_flags)

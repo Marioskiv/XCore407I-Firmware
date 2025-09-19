@@ -160,7 +160,7 @@ uint32_t jog_get_current_speed_axis(int axis); // instantaneous ramped speed
 
 Feedback telemetry now appends four `uint32_t` values (current per-axis jog speeds in steps/s) plus a `uint32_t` probe field at the end of the payload.
 
-Feedback field order (after UDP header) – Protocol Version 2:
+Feedback field order (after UDP header) – Protocol Version 4 (v2/v3 fields are prefix):
 
 1. `jointFeedback[JOINTS]` (encoder counts)
 2. `processVariable[JOINTS]`
@@ -174,14 +174,14 @@ Feedback field order (after UDP header) – Protocol Version 2:
 
 ### Protocol Version Negotiation
 
-The `reserved` field in the UDP header carries `REMORA_PROTOCOL_VERSION` (currently `2`). A host must read this value before assuming the presence or ordering of extended fields (jogTargets, jogDirs, probe). Hosts encountering an unexpected version should either:
+The `reserved` field in the UDP header carries `REMORA_PROTOCOL_VERSION` (currently `4`). A host must read this value before assuming the presence or ordering of extended fields (jogTargets, jogDirs, probe, firmwareVersion, buildHash, heartbeat, uptime, statusFlags, seqGapEvents, crc32). Hosts encountering an unexpected version should either:
 
 1. Fallback to a prior known parsing layout, or
 2. Reject the packet and request a firmware update / compatibility mode.
 
 No backward compatibility shim is provided inside the firmware; version increments indicate a structural change in payload layout.
 
-Example host unpack (pseudo-C) for Protocol Version 2:
+Example host unpack (pseudo-C) for Protocol Version 3:
 
 ```c
 uint32_t *p = (uint32_t*)payload; // after header
@@ -415,11 +415,18 @@ Optional 8-byte extension (two uint32_t little-endian) may follow the base comma
 | 1      | CLEAR_FAULTS      | Value ignored          |
 | 2      | SET_JOG_SPEED     | Steps/s target         |
 | 3      | SET_JOG_ACCEL     | Steps/s^2 acceleration |
+| 4      | HOME_AXIS         | Axis index (0..3)      |
+| 5      | ABORT_HOMING      | Value ignored          |
 
 Behavior:
  
 - CLEAR_FAULTS succeeds only if E-Stop not active. Returns to normal enabling (drivers re-enabled) but motion remains halted until host issues new freq commands or jog input.
 - SET_JOG_SPEED & SET_JOG_ACCEL update internal parameters used by `jog_poll()` ramp logic.
+
+### Homing
+
+Homing sequence (per-axis): SEEK -> TRIGGERED -> BACKOFF -> SET_ZERO -> DONE.
+Probe (active low) must remain triggered for a debounce window to finalize SEEK. A short reverse BACKOFF improves repeatability. Axis offsets are applied so reported encoder value becomes zero after SET_ZERO. Homed axes are indicated in `statusFlags` bits8-11; bit3 = homingActive. Jogging is inhibited during homing.
 
 ### Jog Debounce & Acceleration
 

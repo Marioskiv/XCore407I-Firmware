@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h> /* rand() used via LWIP_RAND macro */
 
 #define LWIP_PLATFORM_DIAG(x) do { printf x; } while(0)
 #define LWIP_PLATFORM_ASSERT(x) do { while(1); } while(0)
@@ -22,6 +23,6 @@ typedef uintptr_t mem_ptr_t;
 #define S32_F "d"
 #define X32_F "x"
 
-#define BYTE_ORDER LITTLE_ENDIAN
+/* BYTE_ORDER provided by newlib's machine/endian.h; avoid redef to silence warnings */
 
 #endif // LWIP_ARCH_CC_H
