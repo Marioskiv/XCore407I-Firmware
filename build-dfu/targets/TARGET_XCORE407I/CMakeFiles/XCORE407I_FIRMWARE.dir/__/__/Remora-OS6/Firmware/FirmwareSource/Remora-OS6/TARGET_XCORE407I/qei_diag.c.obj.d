@@ -1,0 +1,58 @@
+targets/TARGET_XCORE407I/CMakeFiles/XCORE407I_FIRMWARE.dir/__/__/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/qei_diag.c.obj: \
+ /home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/qei_diag.c \
+ /home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/drivers/qei/qeiDriver.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+ /home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stm32f4xx_hal_conf.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Include/core_cm4.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Include/cmsis_version.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Include/cmsis_compiler.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Include/cmsis_gcc.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Include/mpu_armv7.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h \
+ /home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h \
+ /usr/include/newlib/stdio.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/cdefs.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h \
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/types.h \
+ /usr/include/newlib/sys/_stdint.h /usr/include/newlib/machine/endian.h \
+ /usr/include/newlib/machine/_endian.h /usr/include/newlib/sys/select.h \
+ /usr/include/newlib/sys/_sigset.h /usr/include/newlib/sys/_timeval.h \
+ /usr/include/newlib/sys/timespec.h /usr/include/newlib/sys/_timespec.h \
+ /usr/include/newlib/sys/_pthreadtypes.h /usr/include/newlib/sys/sched.h \
+ /usr/include/newlib/machine/types.h /usr/include/newlib/sys/stdio.h

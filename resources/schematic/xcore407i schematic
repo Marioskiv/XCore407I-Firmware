@@ -1,0 +1,90 @@
+﻿# XCore407I Custom Board – Hardware Notes
+
+Αυτό το αρχείο περιγράφει το schematic της πλακέτας **XCore407I** ώστε το Copilot να έχει context για firmware generation.
+
+---
+
+## MCU
+- **STM32F407/417 (176‑pin, STM32FxxxI series)**
+- HSE: 8 MHz
+- LSE: 32.768 kHz (RTC, VBAT coin cell)
+- SYSCLK: 168 MHz (PLL)
+- Όλα τα GPIO εκτεθειμένα σε 35×2 header
+- Boot0 jumper, reset button
+
+---
+
+## Ethernet (DP83848I, RMII)
+| Signal   | STM32 Pin | Notes |
+|----------|-----------|-------|
+| REF_CLK  | PA1       | 50 MHz input |
+| CRS_DV   | PA7       | Carrier sense/data valid |
+| RXD0     | PC4       | Receive data 0 |
+| RXD1     | PC5       | Receive data 1 |
+| TX_EN    | PG11      | Transmit enable |
+| TXD0     | PB12      | Transmit data 0 |
+| TXD1     | PB13      | Transmit data 1 |
+| MDC      | PC1       | Management clock |
+| MDIO     | PA2       | Management data |
+| RESET    | GPIO (PG13) | Active low |
+| LEDs     | PHY LED pins | Link/Act, Speed |
+
+---
+
+## NAND Flash (K9F1G08U0C, 8‑bit via FSMC)
+| Signal | STM32 Pin | Notes |
+|--------|-----------|-------|
+| D0–D7  | PD14, PD15, PD0, PD1, PE7–PE10 | Data bus |
+| NOE    | PD4       | Read enable |
+| NWE    | PD5       | Write enable |
+| CE     | PD7       | Chip enable |
+| CLE    | PD12      | Command latch |
+| ALE    | PD11      | Address latch |
+| R/B    | PD6       | Ready/Busy |
+| WP     | GPIO w/ pull‑up | Write protect |
+
+---
+
+## USB HS (USB3300, ULPI)
+- ULPI 8‑bit data bus (DATA0–7)
+- ULPI_CK 60 MHz clock from PHY
+- DIR, NXT, STP control lines
+- RESET pin from MCU GPIO
+- VBUS via MIC2025/75 power switch
+- Supplies: 3.3 V I/O, 1.8 V core
+- 24 MHz crystal for PHY
+
+---
+
+## Power
+- 3.3 V main rail
+- 1.8 V regulator for USB3300
+- Decoupling: 100 nF + 10 µF per domain
+
+---
+
+## Copilot Tasks
+- **CubeMX config**:  
+  - Ethernet RMII, PHY addr=0x01  
+  - USB HS external PHY (ULPI)  
+  - FSMC NAND 8‑bit  
+  - Clocks: HSE=8 MHz, LSE=32.768 kHz, SYSCLK=168 MHz  
+
+- **Drivers to generate**:  
+  - Ethernet (HAL + LwIP) with PHY reset + autonegotiation  
+  - USB HS (CDC/MSC) with ULPI init  
+  - NAND flash driver (RESET, READ ID, READ PAGE, PROGRAM PAGE, ERASE)  
+
+- **GPIO init**:  
+  - PHY_RESET, USB3300_RESET  
+  - NAND_WP (pull‑up), NAND_RB (input)  
+  - LEDs for status  
+
+---
+
+## Quick Checklist
+- Ethernet RMII pins verified  
+- USB3300 ULPI lines mapped  
+- NAND FSMC timings conservative  
+- RTC battery + LSE crystal present  
+- SYSCLK 168 MHz with flash latency set

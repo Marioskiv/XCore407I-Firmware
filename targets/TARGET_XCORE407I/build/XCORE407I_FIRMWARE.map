@@ -1,0 +1,2165 @@
+Archive member included to satisfy reference by file (symbol)
+
+liblwipcore.a(init.c.obj)     CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj (lwip_init)
+liblwipcore.a(mem.c.obj)      liblwipcore.a(init.c.obj) (mem_init)
+liblwipcore.a(memp.c.obj)     liblwipcore.a(init.c.obj) (memp_init)
+liblwipcore.a(netif.c.obj)    liblwipcore.a(init.c.obj) (netif_init)
+liblwipcore.a(pbuf.c.obj)     CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj (pbuf_alloc)
+liblwipcore.a(timeouts.c.obj)
+                              liblwipcore.a(init.c.obj) (sys_timeouts_init)
+liblwipcore.a(def.c.obj)      liblwipcore.a(netif.c.obj) (lwip_itoa)
+liblwipcore.a(ip4_addr.c.obj)
+                              CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj (ip_addr_any)
+liblwipcore.a(ip4.c.obj)      liblwipcore.a(netif.c.obj) (ip4_input)
+liblwipcore.a(ip4_frag.c.obj)
+                              liblwipcore.a(timeouts.c.obj) (ip_reass_tmr)
+liblwipcore.a(etharp.c.obj)   liblwipcore.a(timeouts.c.obj) (etharp_tmr)
+liblwipcore.a(udp.c.obj)      liblwipcore.a(init.c.obj) (udp_init)
+liblwipcore.a(ethernet.c.obj)
+                              CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj (ethernet_input)
+liblwipcore.a(sys_arch.c.obj)
+                              CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj (sys_now)
+liblwipcore.a(ip.c.obj)       liblwipcore.a(ip4.c.obj) (ip_data)
+liblwipcore.a(inet_chksum.c.obj)
+                              liblwipcore.a(udp.c.obj) (ip_chksum_pseudo)
+liblwipcore.a(icmp.c.obj)     liblwipcore.a(ip4.c.obj) (icmp_input)
+/usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+                              CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj (__aeabi_ldivmod)
+/usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+                              CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj (__aeabi_uldivmod)
+/usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                              /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o) (__udivmoddi4)
+/usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o) (__aeabi_ldiv0)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+                              liblwipcore.a(netif.c.obj) (atoi)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+                              liblwipcore.a(ip4_addr.c.obj) (_ctype_)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+                              CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj (__errno)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+                              /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o) (_impure_ptr)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+                              liblwipcore.a(ethernet.c.obj) (memcmp)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+                              CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj (memcpy)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+                              liblwipcore.a(def.c.obj) (memmove)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+                              CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj (memset)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+                              liblwipcore.a(udp.c.obj) (rand)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+                              liblwipcore.a(pbuf.c.obj) (strlen)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+                              liblwipcore.a(def.c.obj) (strncmp)
+/usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+                              /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o) (_strtol_r)
+
+Discarded input sections
+
+ .text          0x00000000       0x14 CMakeFiles/XCORE407I_FIRMWARE.dir/startup_stm32f407xx.s.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/startup_stm32f407xx.s.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/startup_stm32f407xx.s.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/main_xcore407i.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/main_xcore407i.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/main_xcore407i.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/system_clock.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/system_clock.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/system_clock.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/remora_data.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/remora_data.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/remora_data.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+ .text.ethernetif_get_stats
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj
+ .text.lwip_port_netif
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .text.remora_get_diag
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .bss.s.0       0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+ .text.stepgen_poll
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .text.stop_all_step_timers
+                0x00000000       0x74 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .text.motion_get_jog_speed
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .text.motion_get_jog_accel
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .text.HAL_GPIO_EXTI_Callback
+                0x00000000       0x7c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+ .text.encoder_latch_and_reset
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+ .rodata.APBPrescTable
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._close   0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._fstat   0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._isatty  0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._lseek   0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._read    0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._write   0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._sbrk    0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._exit    0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._kill    0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._getpid  0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._stat    0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._unlink  0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._gettimeofday
+                0x00000000       0x14 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text._times   0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .data.heap_ptr
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .comment       0x00000000       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_MspDeInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_DeInit
+                0x00000000       0x3c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_IncTick
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_GetTickPrio
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_SetTickFreq
+                0x00000000       0x28 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_GetTickFreq
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_SuspendTick
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_ResumeTick
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_GetHalVersion
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_GetREVID
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_GetDEVID
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_DBGMCU_EnableDBGSleepMode
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_DBGMCU_DisableDBGSleepMode
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_DBGMCU_EnableDBGStopMode
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_DBGMCU_DisableDBGStopMode
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_DBGMCU_EnableDBGStandbyMode
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_DBGMCU_DisableDBGStandbyMode
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_EnableCompensationCell
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_DisableCompensationCell
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_GetUIDw0
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_GetUIDw1
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text.HAL_GetUIDw2
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_DeInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_MCOConfig
+                0x00000000       0xa0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_EnableCSS
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_DisableCSS
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetHCLKFreq
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetPCLK1Freq
+                0x00000000       0x20 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetPCLK2Freq
+                0x00000000       0x20 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetOscConfig
+                0x00000000       0x8c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_GetClockConfig
+                0x00000000       0x44 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_CSSCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text.HAL_RCC_NMI_IRQHandler
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .text.HAL_RCCEx_PeriphCLKConfig
+                0x00000000      0x13c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .text.HAL_RCCEx_GetPeriphCLKConfig
+                0x00000000       0x30 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .text.HAL_RCCEx_GetPeriphCLKFreq
+                0x00000000       0x50 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .text.HAL_RCCEx_EnablePLLI2S
+                0x00000000       0x64 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .text.HAL_RCCEx_DisablePLLI2S
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .text.HAL_RCC_DeInit
+                0x00000000      0x124 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .comment       0x00000000       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .text.HAL_GPIO_DeInit
+                0x00000000      0x174 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .text.HAL_GPIO_ReadPin
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .text.HAL_GPIO_TogglePin
+                0x00000000       0x14 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .text.HAL_GPIO_LockPin
+                0x00000000       0x2c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .text.HAL_GPIO_EXTI_Callback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .text.HAL_GPIO_EXTI_IRQHandler
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_NVIC_DisableIRQ
+                0x00000000       0x24 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_NVIC_SystemReset
+                0x00000000       0x24 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_MPU_Disable
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_MPU_Enable
+                0x00000000       0x20 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_MPU_EnableRegion
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_MPU_DisableRegion
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_MPU_ConfigRegion
+                0x00000000       0x60 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_CORTEX_ClearEvent
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_NVIC_GetPriorityGrouping
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_NVIC_GetPriority
+                0x00000000       0x68 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_NVIC_SetPendingIRQ
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_NVIC_GetPendingIRQ
+                0x00000000       0x24 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_NVIC_ClearPendingIRQ
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_NVIC_GetActive
+                0x00000000       0x24 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_SYSTICK_CLKSourceConfig
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_SYSTICK_Callback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text.HAL_SYSTICK_IRQHandler
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_DeInit
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_EnableBkUpAccess
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_DisableBkUpAccess
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_ConfigPVD
+                0x00000000       0x78 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_EnablePVD
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_DisablePVD
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_EnableWakeUpPin
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_DisableWakeUpPin
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_EnterSLEEPMode
+                0x00000000       0x24 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_EnterSTOPMode
+                0x00000000       0x44 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_EnterSTANDBYMode
+                0x00000000       0x20 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_PVDCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_PVD_IRQHandler
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_EnableSleepOnExit
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_DisableSleepOnExit
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_EnableSEVOnPend
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text.HAL_PWR_DisableSEVOnPend
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .comment       0x00000000       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .text.HAL_PWREx_EnableBkUpReg
+                0x00000000       0x38 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .text.HAL_PWREx_DisableBkUpReg
+                0x00000000       0x38 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .text.HAL_PWREx_EnableFlashPowerDown
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .text.HAL_PWREx_DisableFlashPowerDown
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .text.HAL_PWREx_GetVoltageRange
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .text.HAL_PWREx_ControlVoltageScaling
+                0x00000000       0x64 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .comment       0x00000000       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.FLASH_SetErrorCode
+                0x00000000       0x78 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_Program_IT
+                0x00000000       0xb8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_EndOfOperationCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_OperationErrorCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_IRQHandler
+                0x00000000       0xc0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_Unlock
+                0x00000000       0x28 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_Lock
+                0x00000000       0x14 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_OB_Unlock
+                0x00000000       0x24 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_OB_Lock
+                0x00000000       0x14 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_OB_Launch
+                0x00000000       0x58 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_GetError
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.FLASH_WaitForLastOperation
+                0x00000000       0x54 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text.HAL_FLASH_Program
+                0x00000000       0xd0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .data.pFlash   0x00000000       0x20 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .comment       0x00000000       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .text.HAL_FLASHEx_OBProgram
+                0x00000000       0xc0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .text.HAL_FLASHEx_OBGetConfig
+                0x00000000       0x38 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .text.FLASH_Erase_Sector
+                0x00000000       0x3c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .text.HAL_FLASHEx_Erase_IT
+                0x00000000       0x78 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .text.FLASH_FlushCaches
+                0x00000000       0x58 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .text.HAL_FLASHEx_Erase
+                0x00000000       0xc4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .comment       0x00000000       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_Init
+                0x00000000      0x12c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_DeInit
+                0x00000000       0x80 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_Start
+                0x00000000       0x58 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_Start_IT
+                0x00000000       0x78 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_Abort
+                0x00000000       0x94 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_Abort_IT
+                0x00000000       0x24 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_PollForTransfer
+                0x00000000      0x130 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_IRQHandler
+                0x00000000      0x1ac CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_RegisterCallback
+                0x00000000       0x50 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_UnRegisterCallback
+                0x00000000       0x70 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_GetState
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text.HAL_DMA_GetError
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .rodata.flagBitshiftOffset.0
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .comment       0x00000000       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_TxFreeCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_MspInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_MspDeInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_DeInit
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_Start_IT
+                0x00000000       0xa0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_Stop
+                0x00000000       0x88 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_Stop_IT
+                0x00000000       0xac CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_Transmit_IT
+                0x00000000       0x64 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_RegisterRxAllocateCallback
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_UnRegisterRxAllocateCallback
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_RegisterRxLinkCallback
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_UnRegisterRxLinkCallback
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_GetRxDataErrorCode
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_RegisterTxFreeCallback
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_UnRegisterTxFreeCallback
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_ReleaseTxPacket
+                0x00000000       0x64 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_TxCpltCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_RxCpltCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_ErrorCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_PMTCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_WakeUpCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_IRQHandler
+                0x00000000       0xe0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_WritePHYRegister
+                0x00000000       0x4c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_GetMACConfig
+                0x00000000       0xd4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_GetDMAConfig
+                0x00000000       0xa8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_SetMACConfig
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_SetDMAConfig
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_SetMDIOClockRange
+                0x00000000       0x5c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_SetMACFilterConfig
+                0x00000000       0x74 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_GetMACFilterConfig
+                0x00000000       0x68 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_SetSourceMACAddrMatch
+                0x00000000       0x28 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_SetHashTable
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_SetRxVLANIdentifier
+                0x00000000       0x30 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_EnterPowerDownMode
+                0x00000000       0x28 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_ExitPowerDownMode
+                0x00000000       0x4c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_SetWakeUpFilter
+                0x00000000       0x28 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_GetState
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_GetError
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_GetDMAError
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_GetMACError
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_GetMACWakeUpSource
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_GetTxBuffersNumber
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_SlaveTimer_SetConfig.constprop.0
+                0x00000000       0xcc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Base_MspDeInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Base_DeInit
+                0x00000000       0x60 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Base_Start
+                0x00000000       0x6c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Base_Stop
+                0x00000000       0x28 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Base_Start_IT
+                0x00000000       0x74 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Base_Stop_IT
+                0x00000000       0x30 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Base_Start_DMA
+                0x00000000       0xb0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Base_Stop_DMA
+                0x00000000       0x3c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_MspInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_MspDeInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_DeInit
+                0x00000000       0x60 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_Stop
+                0x00000000       0xa0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_Start_IT
+                0x00000000       0xf4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_Stop_IT
+                0x00000000       0xdc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_Start_DMA
+                0x00000000      0x1bc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_Stop_DMA
+                0x00000000       0xec CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_MspDeInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_DeInit
+                0x00000000       0x60 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_Start
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_Stop
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_Start_IT
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_Stop_IT
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_Start_DMA
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_Stop_DMA
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_MspInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_MspDeInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_DeInit
+                0x00000000       0x60 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_Start
+                0x00000000      0x110 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_Stop
+                0x00000000       0x80 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_Start_IT
+                0x00000000      0x120 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_Stop_IT
+                0x00000000      0x128 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_Start_DMA
+                0x00000000      0x23c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_Stop_DMA
+                0x00000000      0x120 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OnePulse_MspInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OnePulse_MspDeInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OnePulse_DeInit
+                0x00000000       0x50 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OnePulse_Start
+                0x00000000       0x94 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OnePulse_Stop
+                0x00000000       0x80 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OnePulse_Start_IT
+                0x00000000       0xa4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OnePulse_Stop_IT
+                0x00000000       0x90 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Encoder_MspDeInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Encoder_DeInit
+                0x00000000       0x50 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Encoder_Stop
+                0x00000000       0xc4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Encoder_Start_IT
+                0x00000000       0xf0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Encoder_Stop_IT
+                0x00000000       0xdc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Encoder_Start_DMA
+                0x00000000      0x1c4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Encoder_Stop_DMA
+                0x00000000      0x104 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_DMABurst_MultiWriteStart
+                0x00000000       0xec CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_DMABurst_WriteStart
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_DMABurst_WriteStop
+                0x00000000       0x80 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_DMABurst_MultiReadStart
+                0x00000000       0xec CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_DMABurst_ReadStart
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_DMABurst_ReadStop
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_GenerateEvent
+                0x00000000       0x2c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_ConfigOCrefClear
+                0x00000000       0xe0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_ConfigClockSource
+                0x00000000      0x154 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_ConfigTI1Input
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_SlaveConfigSynchro
+                0x00000000       0x4c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_SlaveConfigSynchro_IT
+                0x00000000       0x4c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_ReadCapturedValue
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PeriodElapsedCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_DMAPeriodElapsedCplt
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PeriodElapsedHalfCpltCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_DMAPeriodElapsedHalfCplt
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_DelayElapsedCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_CaptureCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_DMACaptureCplt
+                0x00000000       0x94 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_CaptureHalfCpltCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_DMACaptureHalfCplt
+                0x00000000       0x60 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_PulseFinishedCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_DMADelayPulseCplt
+                0x00000000       0x84 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_PulseFinishedHalfCpltCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_DMADelayPulseHalfCplt
+                0x00000000       0x60 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_TriggerCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IRQHandler
+                0x00000000      0x138 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_DMATriggerCplt
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_TriggerHalfCpltCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_DMATriggerHalfCplt
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_ErrorCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_DMAError
+                0x00000000       0x84 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Base_GetState
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_GetState
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_GetState
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_GetState
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OnePulse_GetState
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Encoder_GetState
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_GetActiveChannel
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_GetChannelState
+                0x00000000       0x28 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_DMABurstState
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OC_Init
+                0x00000000       0x5c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_Init
+                0x00000000       0x5c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OnePulse_Init
+                0x00000000       0x5c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_ConfigChannel
+                0x00000000       0xc0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_TI1_SetConfig
+                0x00000000       0x7c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_IC_ConfigChannel
+                0x00000000      0x130 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_OnePulse_ConfigChannel
+                0x00000000      0x118 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_ETR_SetConfig
+                0x00000000       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_CCxChannelCmd
+                0x00000000       0x20 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.TIM_DMAErrorCCxN
+                0x00000000       0x64 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.TIM_DMADelayPulseNCplt
+                0x00000000       0x6c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_MspInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_Init
+                0x00000000       0xc8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_MspDeInit
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_DeInit
+                0x00000000       0x50 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_Start
+                0x00000000       0xac CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_Stop
+                0x00000000       0x44 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_Start_IT
+                0x00000000       0xb4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_Stop_IT
+                0x00000000       0x4c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_Start_DMA
+                0x00000000       0xdc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_Stop_DMA
+                0x00000000       0x4c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_OCN_Start
+                0x00000000       0xc8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_OCN_Stop
+                0x00000000       0x8c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_OCN_Start_IT
+                0x00000000       0xe8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_OCN_Stop_IT
+                0x00000000       0xc8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_OCN_Start_DMA
+                0x00000000      0x18c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_OCN_Stop_DMA
+                0x00000000       0xc0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_PWMN_Start
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_PWMN_Stop
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_PWMN_Start_IT
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_PWMN_Stop_IT
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_PWMN_Start_DMA
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_PWMN_Stop_DMA
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_OnePulseN_Start
+                0x00000000       0x84 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_OnePulseN_Stop
+                0x00000000       0x7c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_OnePulseN_Start_IT
+                0x00000000       0x94 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_OnePulseN_Stop_IT
+                0x00000000       0x8c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_ConfigCommutEvent
+                0x00000000       0x60 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_ConfigCommutEvent_IT
+                0x00000000       0x60 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_ConfigCommutEvent_DMA
+                0x00000000       0x78 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_MasterConfigSynchronization
+                0x00000000       0x80 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_ConfigBreakDeadTime
+                0x00000000       0x54 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_RemapConfig
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_CommutCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.TIMEx_DMACommutationCplt
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_CommutHalfCpltCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.TIMEx_DMACommutationHalfCplt
+                0x00000000       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_BreakCallback
+                0x00000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_HallSensor_GetState
+                0x00000000        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_GetChannelNState
+                0x00000000       0x28 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .comment       0x00000000       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .text          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .data          0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .text.HAL_EXTI_SetConfigLine
+                0x00000000       0xa0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .text.HAL_EXTI_GetConfigLine
+                0x00000000       0x94 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .text.HAL_EXTI_ClearConfigLine
+                0x00000000       0x70 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .text.HAL_EXTI_RegisterCallback
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .text.HAL_EXTI_GetHandle
+                0x00000000        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .text.HAL_EXTI_IRQHandler
+                0x00000000       0x2c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .text.HAL_EXTI_GetPending
+                0x00000000       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .text.HAL_EXTI_ClearPending
+                0x00000000       0x14 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .text.HAL_EXTI_GenerateSWI
+                0x00000000       0x14 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .comment       0x00000000       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+ .text          0x00000000        0x0 liblwipcore.a(init.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(init.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(init.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(mem.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(mem.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(mem.c.obj)
+ .text.mem_calloc
+                0x00000000       0x28 liblwipcore.a(mem.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(memp.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(memp.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(memp.c.obj)
+ .text.memp_init_pool
+                0x00000000       0x2c liblwipcore.a(memp.c.obj)
+ .text.memp_malloc_pool
+                0x00000000       0x10 liblwipcore.a(memp.c.obj)
+ .text.memp_free_pool
+                0x00000000       0x10 liblwipcore.a(memp.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(netif.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(netif.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(netif.c.obj)
+ .text.netif_input
+                0x00000000       0x14 liblwipcore.a(netif.c.obj)
+ .text.netif_set_ipaddr
+                0x00000000       0x54 liblwipcore.a(netif.c.obj)
+ .text.netif_set_netmask
+                0x00000000       0x1c liblwipcore.a(netif.c.obj)
+ .text.netif_set_gw
+                0x00000000       0x1c liblwipcore.a(netif.c.obj)
+ .text.netif_add_noaddr
+                0x00000000       0x1c liblwipcore.a(netif.c.obj)
+ .text.netif_remove
+                0x00000000       0x74 liblwipcore.a(netif.c.obj)
+ .text.netif_set_down
+                0x00000000       0x1c liblwipcore.a(netif.c.obj)
+ .text.netif_set_link_up
+                0x00000000       0x34 liblwipcore.a(netif.c.obj)
+ .text.netif_set_link_down
+                0x00000000       0x14 liblwipcore.a(netif.c.obj)
+ .text.netif_name_to_index
+                0x00000000       0x44 liblwipcore.a(netif.c.obj)
+ .text.netif_index_to_name
+                0x00000000       0x40 liblwipcore.a(netif.c.obj)
+ .text.netif_find
+                0x00000000       0x44 liblwipcore.a(netif.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(pbuf.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(pbuf.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_alloc_reference
+                0x00000000       0x2c liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_add_header_force
+                0x00000000       0x50 liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_header
+                0x00000000       0x70 liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_free_header
+                0x00000000       0x48 liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_dechain
+                0x00000000       0x28 liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_get_contiguous
+                0x00000000       0xac liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_skip
+                0x00000000       0x1c liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_take_at
+                0x00000000       0xa8 liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_coalesce
+                0x00000000       0x5c liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_get_at
+                0x00000000       0x1c liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_try_get_at
+                0x00000000       0x20 liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_put_at
+                0x00000000       0x1c liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_memcmp
+                0x00000000       0x74 liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_memfind
+                0x00000000       0x94 liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_strstr
+                0x00000000       0x44 liblwipcore.a(pbuf.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(timeouts.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(timeouts.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(timeouts.c.obj)
+ .text.sys_timeout
+                0x00000000       0x50 liblwipcore.a(timeouts.c.obj)
+ .text.sys_untimeout
+                0x00000000       0x3c liblwipcore.a(timeouts.c.obj)
+ .text.sys_restart_timeouts
+                0x00000000       0x2c liblwipcore.a(timeouts.c.obj)
+ .text.sys_timeouts_sleeptime
+                0x00000000       0x24 liblwipcore.a(timeouts.c.obj)
+ .rodata.lwip_num_cyclic_timers
+                0x00000000        0x4 liblwipcore.a(timeouts.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(def.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(def.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(def.c.obj)
+ .text.lwip_htonl
+                0x00000000        0x4 liblwipcore.a(def.c.obj)
+ .text.lwip_strnstr
+                0x00000000       0x50 liblwipcore.a(def.c.obj)
+ .text.lwip_stricmp
+                0x00000000       0x50 liblwipcore.a(def.c.obj)
+ .text.lwip_strnicmp
+                0x00000000       0x3c liblwipcore.a(def.c.obj)
+ .text.lwip_itoa
+                0x00000000       0x80 liblwipcore.a(def.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(ip4_addr.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(ip4_addr.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(ip4_addr.c.obj)
+ .text.ip4_addr_netmask_valid
+                0x00000000       0x38 liblwipcore.a(ip4_addr.c.obj)
+ .text.ip4addr_aton
+                0x00000000      0x154 liblwipcore.a(ip4_addr.c.obj)
+ .text.ipaddr_addr
+                0x00000000       0x20 liblwipcore.a(ip4_addr.c.obj)
+ .text.ip4addr_ntoa
+                0x00000000       0xe4 liblwipcore.a(ip4_addr.c.obj)
+ .text.ip4addr_ntoa_r
+                0x00000000       0xe0 liblwipcore.a(ip4_addr.c.obj)
+ .bss.str.0     0x00000000       0x10 liblwipcore.a(ip4_addr.c.obj)
+ .rodata.ip_addr_broadcast
+                0x00000000        0x4 liblwipcore.a(ip4_addr.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(ip4.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(ip4.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(ip4.c.obj)
+ .text.ip4_output
+                0x00000000      0x118 liblwipcore.a(ip4.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(ip4_frag.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(ip4_frag.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(ip4_frag.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(etharp.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(etharp.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(etharp.c.obj)
+ .text.etharp_cleanup_netif
+                0x00000000       0x88 liblwipcore.a(etharp.c.obj)
+ .text.etharp_find_addr
+                0x00000000      0x1c0 liblwipcore.a(etharp.c.obj)
+ .text.etharp_get_entry
+                0x00000000       0x40 liblwipcore.a(etharp.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(udp.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(udp.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(udp.c.obj)
+ .text.udp_sendto_if
+                0x00000000       0x40 liblwipcore.a(udp.c.obj)
+ .text.udp_send
+                0x00000000       0x68 liblwipcore.a(udp.c.obj)
+ .text.udp_bind_netif
+                0x00000000       0x10 liblwipcore.a(udp.c.obj)
+ .text.udp_connect
+                0x00000000       0x5c liblwipcore.a(udp.c.obj)
+ .text.udp_disconnect
+                0x00000000       0x14 liblwipcore.a(udp.c.obj)
+ .text.udp_new  0x00000000       0x1c liblwipcore.a(udp.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(ethernet.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(ethernet.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(ethernet.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(sys_arch.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(sys_arch.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(sys_arch.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(ip.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(ip.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(ip.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(inet_chksum.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(inet_chksum.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(inet_chksum.c.obj)
+ .text.inet_chksum_pseudo_partial
+                0x00000000       0xb0 liblwipcore.a(inet_chksum.c.obj)
+ .text.ip_chksum_pseudo_partial
+                0x00000000        0x4 liblwipcore.a(inet_chksum.c.obj)
+ .text          0x00000000        0x0 liblwipcore.a(icmp.c.obj)
+ .data          0x00000000        0x0 liblwipcore.a(icmp.c.obj)
+ .bss           0x00000000        0x0 liblwipcore.a(icmp.c.obj)
+ .text          0x00000000       0xa0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_line    0x00000000       0x6c /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_line_str
+                0x00000000       0x97 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_info    0x00000000       0x25 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_abbrev  0x00000000       0x14 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_str     0x00000000       0xa3 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .debug_frame   0x00000000       0x44 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .ARM.attributes
+                0x00000000       0x22 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_ldivmod.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .text          0x00000000       0x10 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .debug_info    0x00000000      0x975 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .debug_abbrev  0x00000000      0x222 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .debug_loclists
+                0x00000000       0x42 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .debug_line    0x00000000      0x143 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .debug_str     0x00000000      0x565 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .comment       0x00000000       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .debug_frame   0x00000000       0x30 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .ARM.attributes
+                0x00000000       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atoi.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .rodata        0x00000000      0x101 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .debug_info    0x00000000       0xb9 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .debug_abbrev  0x00000000       0x62 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .debug_aranges
+                0x00000000       0x18 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .debug_line    0x00000000       0x8e /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .debug_str     0x00000000      0x18f /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .comment       0x00000000       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x00000000       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-ctype_.o)
+ .text          0x00000000        0xc /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .debug_info    0x00000000      0x8a9 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .debug_abbrev  0x00000000      0x1ce /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .debug_line    0x00000000      0x103 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .debug_str     0x00000000      0x55a /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .comment       0x00000000       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .debug_frame   0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000000       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-errno.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .rodata        0x00000000        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+ .text          0x00000000      0x100 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .debug_info    0x00000000      0x148 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .debug_abbrev  0x00000000       0xc3 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .debug_loclists
+                0x00000000      0x209 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .debug_line    0x00000000      0x1ea /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .debug_str     0x00000000      0x1ca /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .comment       0x00000000       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .debug_frame   0x00000000       0x40 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000000       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+ .text          0x00000000       0xdc /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+ .debug_line    0x00000000       0x87 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+ .debug_line_str
+                0x00000000       0x9e /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+ .debug_info    0x00000000       0x33 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x00000000       0x28 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+ .debug_str     0x00000000       0xb1 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000000       0x1c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strlen.o)
+ .text          0x00000000       0x84 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .debug_info    0x00000000      0x108 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .debug_abbrev  0x00000000       0x92 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .debug_loclists
+                0x00000000       0xf6 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .debug_line    0x00000000      0x1d6 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .debug_str     0x00000000      0x199 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .comment       0x00000000       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .debug_frame   0x00000000       0x38 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .ARM.attributes
+                0x00000000       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strncmp.o)
+ .text          0x00000000      0x16c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .debug_info    0x00000000      0xeba /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .debug_abbrev  0x00000000      0x31c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .debug_loclists
+                0x00000000      0x4f6 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .debug_rnglists
+                0x00000000       0x1b /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .debug_line    0x00000000      0x3a4 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .debug_str     0x00000000      0x7cd /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .comment       0x00000000       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .debug_frame   0x00000000       0x80 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+ .ARM.attributes
+                0x00000000       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-strtol.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00100000         xr
+CCMRAM           0x10000000         0x00010000         xrw
+RAM              0x20000000         0x00020000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/startup_stm32f407xx.s.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/main_xcore407i.cpp.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/system_clock.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/remora_data.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/syscalls.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+LOAD CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
+LOAD liblwipcore.a
+LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++.a
+LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
+END GROUP
+                0x20020000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+
+.isr_vector     0x08000000      0x188
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x188 CMakeFiles/XCORE407I_FIRMWARE.dir/startup_stm32f407xx.s.obj
+                0x08000000                g_pfnVectors
+
+.text           0x08000188     0x61b0
+ *(.text*)
+ .text.Reset_Handler
+                0x08000188       0x44 CMakeFiles/XCORE407I_FIRMWARE.dir/startup_stm32f407xx.s.obj
+                0x080001b6                RTC_WKUP_Handler
+                0x080001b6                FLASH_Handler
+                0x080001b6                DebugMon_Handler
+                0x080001b6                DMA2_Stream7_Handler
+                0x080001b6                OTG_HS_Handler
+                0x080001b6                HardFault_Handler
+                0x080001b6                DMA2_Stream3_Handler
+                0x080001b6                SysTick_Handler
+                0x080001b6                USART3_Handler
+                0x080001b6                PendSV_Handler
+                0x080001b6                NMI_Handler
+                0x080001b6                TIM6_DAC_Handler
+                0x080001b6                CAN1_RX1_Handler
+                0x080001b6                EXTI15_10_Handler
+                0x080001b6                ADC_Handler
+                0x080001b6                HASH_RNG_Handler
+                0x080001b6                I2C1_EV_Handler
+                0x080001b6                TAMP_STAMP_Handler
+                0x080001b6                I2C3_ER_Handler
+                0x080001b6                WWDG_Handler
+                0x080001b6                EXTI4_Handler
+                0x080001b6                I2C3_EV_Handler
+                0x080001b6                DMA1_Stream1_Handler
+                0x080001b6                DMA2_Stream4_Handler
+                0x080001b6                DMA1_Stream7_Handler
+                0x080001b6                OTG_FS_Handler
+                0x080001b6                ETH_WKUP_Handler
+                0x080001b6                TIM1_BRK_TIM9_Handler
+                0x080001b6                I2C1_ER_Handler
+                0x080001b6                DMA1_Stream3_Handler
+                0x080001b6                UsageFault_Handler
+                0x080001b6                TIM1_UP_TIM10_Handler
+                0x080001b6                CAN1_RX0_Handler
+                0x080001b6                TIM1_CC_Handler
+                0x080001b6                I2C2_ER_Handler
+                0x080001b6                USART6_Handler
+                0x080001b6                TIM8_CC_Handler
+                0x080001b6                CAN1_SCE_Handler
+                0x080001b6                DMA1_Stream0_Handler
+                0x080001b6                OTG_HS_EP1_OUT_Handler
+                0x080001b6                FSMC_Handler
+                0x080001b6                EXTI1_Handler
+                0x080001b6                EXTI3_Handler
+                0x080001b6                CRYP_Handler
+                0x080001b6                EXTI2_Handler
+                0x080001b6                UART4_Handler
+                0x080001b6                CAN2_RX1_Handler
+                0x080001b6                EXTI9_5_Handler
+                0x080001b6                TIM2_Handler
+                0x080001b6                USART1_Handler
+                0x080001b6                CAN2_SCE_Handler
+                0x080001b6                TIM3_Handler
+                0x080001b6                DMA2_Stream6_Handler
+                0x080001b6                Default_Handler
+                0x080001b6                DCMI_Handler
+                0x080001b6                TIM1_TRG_COM_TIM11_Handler
+                0x080001b6                RTC_Alarm_Handler
+                0x080001b6                TIM4_Handler
+                0x080001b6                TIM8_UP_TIM13_Handler
+                0x080001b6                CAN2_TX_Handler
+                0x080001b6                SPI2_Handler
+                0x080001b6                DMA2_Stream1_Handler
+                0x080001b6                DMA1_Stream2_Handler
+                0x080001b6                MemManage_Handler
+                0x080001b6                EXTI0_Handler
+                0x080001b6                TIM8_BRK_TIM12_Handler
+                0x080001b6                SVC_Handler
+                0x080001b6                CAN2_RX0_Handler
+                0x080001b6                DMA2_Stream5_Handler
+                0x080001b6                DMA1_Stream6_Handler
+                0x080001b6                SDIO_Handler
+                0x080001b6                USART2_Handler
+                0x080001b6                ETH_Handler
+                0x080001b6                SPI1_Handler
+                0x080001b6                I2C2_EV_Handler
+                0x080001b6                DMA2_Stream2_Handler
+                0x080001b6                SPI3_Handler
+                0x080001b6                DMA2_Stream0_Handler
+                0x080001b6                RCC_Handler
+                0x080001b6                PVD_Handler
+                0x080001b6                UART5_Handler
+                0x080001b6                DMA1_Stream5_Handler
+                0x080001b6                TIM5_Handler
+                0x080001b6                TIM7_Handler
+                0x080001b6                TIM8_TRG_COM_TIM14_Handler
+                0x080001b6                CAN1_TX_Handler
+                0x080001b6                FPU_Handler
+                0x080001b6                BusFault_Handler
+                0x080001b6                DMA1_Stream4_Handler
+                0x080001b6                OTG_HS_WKUP_Handler
+                0x080001b6                OTG_FS_WKUP_Handler
+                0x080001b6                OTG_HS_EP1_IN_Handler
+ .text.startup.main
+                0x080001cc       0x50 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/main_xcore407i.cpp.obj
+                0x080001cc                main
+ .text.SystemClock_Config
+                0x0800021c       0xa8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/system_clock.c.obj
+                0x0800021c                SystemClock_Config
+ .text.rx_allocate
+                0x080002c4       0x24 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+ .text.rx_link  0x080002e8        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+ .text.HAL_ETH_MspInit
+                0x080002f0      0x154 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+                0x080002f0                HAL_ETH_MspInit
+ .text.MX_ETH_Init
+                0x08000444       0x8c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+                0x08000444                MX_ETH_Init
+ .text.ETH_LinkUp
+                0x080004d0       0x2c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+                0x080004d0                ETH_LinkUp
+ .text.low_level_output
+                0x080004fc       0x74 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+ .text.ethernetif_init
+                0x08000570       0x44 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+                0x08000570                ethernetif_init
+ .text.ethernetif_poll
+                0x080005b4      0x114 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+                0x080005b4                ethernetif_poll
+ .text.lwip_port_init
+                0x080006c8       0x54 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj
+                0x080006c8                lwip_port_init
+ .text.lwip_port_poll
+                0x0800071c        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj
+                0x0800071c                lwip_port_poll
+ .text.remora_udp_recv
+                0x08000728      0x140 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .text.remora_udp_send_feedback_unicast
+                0x08000868       0xc0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .text.remora_udp_init
+                0x08000928       0x40 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+                0x08000928                remora_udp_init
+ .text.remora_udp_poll
+                0x08000968        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+                0x08000968                remora_udp_poll
+ .text.remora_udp_send_feedback
+                0x0800096c        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+                0x0800096c                remora_udp_send_feedback
+ .text.apply_freq
+                0x08000970       0x84 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+ .text.step_channel_pwm_init
+                0x080009f4       0x40 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+ .text.stepgen_init
+                0x08000a34      0x1ac CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+                0x08000a34                stepgen_init
+ .text.stepgen_apply_command
+                0x08000be0       0x78 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+                0x08000be0                stepgen_apply_command
+ .text.motion_get_fault_mask
+                0x08000c58        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+                0x08000c58                motion_get_fault_mask
+ .text.motion_get_estop
+                0x08000c64        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+                0x08000c64                motion_get_estop
+ .text.motion_try_clear_faults
+                0x08000c70       0x2c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+                0x08000c70                motion_try_clear_faults
+ .text.motion_set_jog_speed
+                0x08000c9c        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+                0x08000c9c                motion_set_jog_speed
+ .text.motion_set_jog_accel
+                0x08000ca8        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+                0x08000ca8                motion_set_jog_accel
+ .text.motion_control_io_init
+                0x08000cb4      0x110 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+                0x08000cb4                motion_control_io_init
+ .text.jog_poll
+                0x08000dc4      0x118 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+                0x08000dc4                jog_poll
+ .text.encoder_init
+                0x08000edc      0x1c8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+                0x08000edc                encoder_init
+ .text.encoder_get_count
+                0x080010a4       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+                0x080010a4                encoder_get_count
+ .text.SystemInit
+                0x080010d8       0x14 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+                0x080010d8                SystemInit
+ .text.SystemCoreClockUpdate
+                0x080010ec       0x70 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+                0x080010ec                SystemCoreClockUpdate
+ .text.HAL_MspInit
+                0x0800115c        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x0800115c                HAL_MspInit
+ .text.HAL_InitTick
+                0x08001160       0x48 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08001160                HAL_InitTick
+ .text.HAL_Init
+                0x080011a8       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x080011a8                HAL_Init
+ .text.HAL_GetTick
+                0x080011dc        0xc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x080011dc                HAL_GetTick
+ .text.HAL_Delay
+                0x080011e8       0x24 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x080011e8                HAL_Delay
+ .text.HAL_RCC_OscConfig
+                0x0800120c      0x3c4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x0800120c                HAL_RCC_OscConfig
+ .text.HAL_RCC_GetSysClockFreq
+                0x080015d0       0x68 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x080015d0                HAL_RCC_GetSysClockFreq
+ .text.HAL_RCC_ClockConfig
+                0x08001638      0x13c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001638                HAL_RCC_ClockConfig
+ .text.HAL_GPIO_Init
+                0x08001774      0x264 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x08001774                HAL_GPIO_Init
+ .text.HAL_GPIO_WritePin
+                0x080019d8        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x080019d8                HAL_GPIO_WritePin
+ .text.HAL_NVIC_SetPriorityGrouping
+                0x080019e0       0x24 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080019e0                HAL_NVIC_SetPriorityGrouping
+ .text.HAL_NVIC_SetPriority
+                0x08001a04       0x7c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08001a04                HAL_NVIC_SetPriority
+ .text.HAL_NVIC_EnableIRQ
+                0x08001a80       0x1c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08001a80                HAL_NVIC_EnableIRQ
+ .text.HAL_SYSTICK_Config
+                0x08001a9c       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08001a9c                HAL_SYSTICK_Config
+ .text.HAL_ETH_RxLinkCallback
+                0x08001ad0        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+                0x08001ad0                HAL_ETH_RxLinkCallback
+ .text.ETH_Prepare_Tx_Descriptors
+                0x08001ad4      0x17c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.ETH_SetMACConfig
+                0x08001c50       0xf0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.ETH_SetDMAConfig
+                0x08001d40       0xa4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_RxAllocateCallback
+                0x08001de4        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+                0x08001de4                HAL_ETH_RxAllocateCallback
+ .text.ETH_UpdateDescriptor
+                0x08001de8       0xa0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .text.HAL_ETH_Init
+                0x08001e88      0x248 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+                0x08001e88                HAL_ETH_Init
+ .text.HAL_ETH_Start
+                0x080020d0       0x8c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+                0x080020d0                HAL_ETH_Start
+ .text.HAL_ETH_Transmit
+                0x0800215c       0xb4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+                0x0800215c                HAL_ETH_Transmit
+ .text.HAL_ETH_ReadData
+                0x08002210      0x124 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+                0x08002210                HAL_ETH_ReadData
+ .text.HAL_ETH_ReadPHYRegister
+                0x08002334       0x50 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+                0x08002334                HAL_ETH_ReadPHYRegister
+ .text.TIM_OC1_SetConfig
+                0x08002384       0x60 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_OC3_SetConfig
+                0x080023e4       0x64 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.TIM_OC4_SetConfig
+                0x08002448       0x50 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .text.HAL_TIM_Base_MspInit
+                0x08002498        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002498                HAL_TIM_Base_MspInit
+ .text.HAL_TIM_OC_Start
+                0x0800249c       0xcc CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0800249c                HAL_TIM_OC_Start
+ .text.HAL_TIM_PWM_MspInit
+                0x08002568        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002568                HAL_TIM_PWM_MspInit
+ .text.HAL_TIM_Encoder_MspInit
+                0x0800256c        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x0800256c                HAL_TIM_Encoder_MspInit
+ .text.HAL_TIM_Encoder_Start
+                0x08002570       0xc4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002570                HAL_TIM_Encoder_Start
+ .text.TIM_Base_SetConfig
+                0x08002634       0xd0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002634                TIM_Base_SetConfig
+ .text.HAL_TIM_Base_Init
+                0x08002704       0x5c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002704                HAL_TIM_Base_Init
+ .text.HAL_TIM_PWM_Init
+                0x08002760       0x5c CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002760                HAL_TIM_PWM_Init
+ .text.HAL_TIM_Encoder_Init
+                0x080027bc       0xac CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x080027bc                HAL_TIM_Encoder_Init
+ .text.TIM_OC2_SetConfig
+                0x08002868       0x64 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x08002868                TIM_OC2_SetConfig
+ .text.HAL_TIM_OC_ConfigChannel
+                0x080028cc       0x58 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+                0x080028cc                HAL_TIM_OC_ConfigChannel
+ .text.lwip_init
+                0x08002924       0x1c liblwipcore.a(init.c.obj)
+                0x08002924                lwip_init
+ .text.mem_init
+                0x08002940       0x3c liblwipcore.a(mem.c.obj)
+                0x08002940                mem_init
+ .text.mem_free
+                0x0800297c       0xdc liblwipcore.a(mem.c.obj)
+                0x0800297c                mem_free
+ .text.mem_trim
+                0x08002a58       0xd0 liblwipcore.a(mem.c.obj)
+                0x08002a58                mem_trim
+ .text.mem_malloc
+                0x08002b28       0xd8 liblwipcore.a(mem.c.obj)
+                0x08002b28                mem_malloc
+ .text.memp_init
+                0x08002c00       0x50 liblwipcore.a(memp.c.obj)
+                0x08002c00                memp_init
+ .text.memp_malloc
+                0x08002c50       0x20 liblwipcore.a(memp.c.obj)
+                0x08002c50                memp_malloc
+ .text.memp_free
+                0x08002c70       0x1c liblwipcore.a(memp.c.obj)
+                0x08002c70                memp_free
+ .text.netif_null_output_ip4
+                0x08002c8c        0x8 liblwipcore.a(netif.c.obj)
+ .text.netif_init
+                0x08002c94        0x4 liblwipcore.a(netif.c.obj)
+                0x08002c94                netif_init
+ .text.netif_set_addr
+                0x08002c98       0xb0 liblwipcore.a(netif.c.obj)
+                0x08002c98                netif_set_addr
+ .text.netif_add
+                0x08002d48       0xb4 liblwipcore.a(netif.c.obj)
+                0x08002d48                netif_add
+ .text.netif_set_default
+                0x08002dfc        0xc liblwipcore.a(netif.c.obj)
+                0x08002dfc                netif_set_default
+ .text.netif_set_up
+                0x08002e08       0x34 liblwipcore.a(netif.c.obj)
+                0x08002e08                netif_set_up
+ .text.netif_get_by_index
+                0x08002e3c       0x24 liblwipcore.a(netif.c.obj)
+                0x08002e3c                netif_get_by_index
+ .text.pbuf_free.part.0
+                0x08002e60       0x60 liblwipcore.a(pbuf.c.obj)
+ .text.pbuf_alloc
+                0x08002ec0       0xf4 liblwipcore.a(pbuf.c.obj)
+                0x08002ec0                pbuf_alloc
+ .text.pbuf_alloced_custom
+                0x08002fb4       0x3c liblwipcore.a(pbuf.c.obj)
+                0x08002fb4                pbuf_alloced_custom
+ .text.pbuf_realloc
+                0x08002ff0       0x70 liblwipcore.a(pbuf.c.obj)
+                0x08002ff0                pbuf_realloc
+ .text.pbuf_add_header
+                0x08003060       0x50 liblwipcore.a(pbuf.c.obj)
+                0x08003060                pbuf_add_header
+ .text.pbuf_remove_header
+                0x080030b0       0x34 liblwipcore.a(pbuf.c.obj)
+                0x080030b0                pbuf_remove_header
+ .text.pbuf_header_force
+                0x080030e4       0x70 liblwipcore.a(pbuf.c.obj)
+                0x080030e4                pbuf_header_force
+ .text.pbuf_free
+                0x08003154        0x8 liblwipcore.a(pbuf.c.obj)
+                0x08003154                pbuf_free
+ .text.pbuf_clen
+                0x0800315c       0x14 liblwipcore.a(pbuf.c.obj)
+                0x0800315c                pbuf_clen
+ .text.pbuf_ref
+                0x08003170        0xc liblwipcore.a(pbuf.c.obj)
+                0x08003170                pbuf_ref
+ .text.pbuf_cat
+                0x0800317c       0x28 liblwipcore.a(pbuf.c.obj)
+                0x0800317c                pbuf_cat
+ .text.pbuf_chain
+                0x080031a4       0x34 liblwipcore.a(pbuf.c.obj)
+                0x080031a4                pbuf_chain
+ .text.pbuf_copy
+                0x080031d8      0x100 liblwipcore.a(pbuf.c.obj)
+                0x080031d8                pbuf_copy
+ .text.pbuf_copy_partial
+                0x080032d8       0x78 liblwipcore.a(pbuf.c.obj)
+                0x080032d8                pbuf_copy_partial
+ .text.pbuf_take
+                0x08003350       0x4c liblwipcore.a(pbuf.c.obj)
+                0x08003350                pbuf_take
+ .text.pbuf_clone
+                0x0800339c       0x1c liblwipcore.a(pbuf.c.obj)
+                0x0800339c                pbuf_clone
+ .text.lwip_cyclic_timer
+                0x080033b8       0x88 liblwipcore.a(timeouts.c.obj)
+ .text.sys_timeouts_init
+                0x08003440       0x6c liblwipcore.a(timeouts.c.obj)
+                0x08003440                sys_timeouts_init
+ .text.sys_check_timeouts
+                0x080034ac       0x50 liblwipcore.a(timeouts.c.obj)
+                0x080034ac                sys_check_timeouts
+ .text.lwip_htons
+                0x080034fc        0x8 liblwipcore.a(def.c.obj)
+                0x080034fc                lwip_htons
+ .text.ip4_addr_isbroadcast_u32
+                0x08003504       0x38 liblwipcore.a(ip4_addr.c.obj)
+                0x08003504                ip4_addr_isbroadcast_u32
+ .text.ip4_route
+                0x0800353c       0x70 liblwipcore.a(ip4.c.obj)
+                0x0800353c                ip4_route
+ .text.ip4_input
+                0x080035ac      0x1cc liblwipcore.a(ip4.c.obj)
+                0x080035ac                ip4_input
+ .text.ip4_output_if
+                0x08003778       0xf4 liblwipcore.a(ip4.c.obj)
+                0x08003778                ip4_output_if
+ .text.ip4_output_if_src
+                0x0800386c       0xf8 liblwipcore.a(ip4.c.obj)
+                0x0800386c                ip4_output_if_src
+ .text.ip_reass_free_complete_datagram
+                0x08003964       0x98 liblwipcore.a(ip4_frag.c.obj)
+ .text.ip_reass_remove_oldest_datagram
+                0x080039fc       0x88 liblwipcore.a(ip4_frag.c.obj)
+ .text.ipfrag_free_pbuf_custom
+                0x08003a84       0x18 liblwipcore.a(ip4_frag.c.obj)
+ .text.ip_reass_tmr
+                0x08003a9c       0x34 liblwipcore.a(ip4_frag.c.obj)
+                0x08003a9c                ip_reass_tmr
+ .text.ip4_reass
+                0x08003ad0      0x3c0 liblwipcore.a(ip4_frag.c.obj)
+                0x08003ad0                ip4_reass
+ .text.ip4_frag
+                0x08003e90      0x1b8 liblwipcore.a(ip4_frag.c.obj)
+                0x08003e90                ip4_frag
+ .text.etharp_find_entry
+                0x08004048      0x970 liblwipcore.a(etharp.c.obj)
+ .text.etharp_output_to_arp_index
+                0x080049b8      0x180 liblwipcore.a(etharp.c.obj)
+ .text.etharp_tmr
+                0x08004b38      0x2f0 liblwipcore.a(etharp.c.obj)
+                0x08004b38                etharp_tmr
+ .text.etharp_input
+                0x08004e28      0x16c liblwipcore.a(etharp.c.obj)
+                0x08004e28                etharp_input
+ .text.etharp_query
+                0x08004f94      0x19c liblwipcore.a(etharp.c.obj)
+                0x08004f94                etharp_query
+ .text.etharp_output
+                0x08005130      0x148 liblwipcore.a(etharp.c.obj)
+                0x08005130                etharp_output
+ .text.etharp_request
+                0x08005278       0x88 liblwipcore.a(etharp.c.obj)
+                0x08005278                etharp_request
+ .text.udp_init
+                0x08005300       0x18 liblwipcore.a(udp.c.obj)
+                0x08005300                udp_init
+ .text.udp_input
+                0x08005318      0x1c4 liblwipcore.a(udp.c.obj)
+                0x08005318                udp_input
+ .text.udp_bind
+                0x080054dc       0xf4 liblwipcore.a(udp.c.obj)
+                0x080054dc                udp_bind
+ .text.udp_sendto_if_src
+                0x080055d0       0xf4 liblwipcore.a(udp.c.obj)
+                0x080055d0                udp_sendto_if_src
+ .text.udp_sendto
+                0x080056c4       0x64 liblwipcore.a(udp.c.obj)
+                0x080056c4                udp_sendto
+ .text.udp_recv
+                0x08005728        0x8 liblwipcore.a(udp.c.obj)
+                0x08005728                udp_recv
+ .text.udp_remove
+                0x08005730       0x34 liblwipcore.a(udp.c.obj)
+                0x08005730                udp_remove
+ .text.udp_new_ip_type
+                0x08005764       0x1c liblwipcore.a(udp.c.obj)
+                0x08005764                udp_new_ip_type
+ .text.udp_netif_ip_addr_changed
+                0x08005780       0x3c liblwipcore.a(udp.c.obj)
+                0x08005780                udp_netif_ip_addr_changed
+ .text.ethernet_input
+                0x080057bc       0xa4 liblwipcore.a(ethernet.c.obj)
+                0x080057bc                ethernet_input
+ .text.ethernet_output
+                0x08005860       0x50 liblwipcore.a(ethernet.c.obj)
+                0x08005860                ethernet_output
+ .text.sys_now  0x080058b0        0x4 liblwipcore.a(sys_arch.c.obj)
+                0x080058b0                sys_now
+ .text.lwip_standard_chksum
+                0x080058b4       0x7c liblwipcore.a(inet_chksum.c.obj)
+                0x080058b4                lwip_standard_chksum
+ .text.inet_chksum_pseudo
+                0x08005930       0x8c liblwipcore.a(inet_chksum.c.obj)
+                0x08005930                inet_chksum_pseudo
+ .text.ip_chksum_pseudo
+                0x080059bc        0x4 liblwipcore.a(inet_chksum.c.obj)
+                0x080059bc                ip_chksum_pseudo
+ .text.inet_chksum
+                0x080059c0       0x74 liblwipcore.a(inet_chksum.c.obj)
+                0x080059c0                inet_chksum
+ .text.inet_chksum_pbuf
+                0x08005a34       0x54 liblwipcore.a(inet_chksum.c.obj)
+                0x08005a34                inet_chksum_pbuf
+ .text.icmp_input
+                0x08005a88      0x144 liblwipcore.a(icmp.c.obj)
+                0x08005a88                icmp_input
+ .text.icmp_dest_unreach
+                0x08005bcc       0x7c liblwipcore.a(icmp.c.obj)
+                0x08005bcc                icmp_dest_unreach
+ .text.icmp_time_exceeded
+                0x08005c48       0x7c liblwipcore.a(icmp.c.obj)
+                0x08005c48                icmp_time_exceeded
+ .text          0x08005cc4       0x30 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x08005cc4                __aeabi_uldivmod
+ .text          0x08005cf4      0x2bc /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08005cf4                __udivmoddi4
+ .text          0x08005fb0        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                0x08005fb0                __aeabi_ldiv0
+                0x08005fb0                __aeabi_idiv0
+ .text          0x08005fb4       0x60 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+                0x08005fb4                memcmp
+ .text          0x08006014      0x134 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+                0x08006014                memcpy
+ .text          0x08006148       0xa4 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+                0x08006148                memset
+ .text          0x080061ec       0x50 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+                0x080061ec                srand
+                0x080061fc                rand
+ *(.rodata*)
+ .rodata.map.1  0x0800623c       0x50 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .rodata        0x0800628c       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .rodata.AHBPrescTable
+                0x0800629c       0x10 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+                0x0800629c                AHBPrescTable
+ .rodata.memp_pools
+                0x080062ac       0x18 liblwipcore.a(memp.c.obj)
+                0x080062ac                memp_pools
+ .rodata.memp_PBUF_POOL
+                0x080062c4        0xc liblwipcore.a(memp.c.obj)
+                0x080062c4                memp_PBUF_POOL
+ .rodata.memp_PBUF
+                0x080062d0        0xc liblwipcore.a(memp.c.obj)
+                0x080062d0                memp_PBUF
+ .rodata.memp_SYS_TIMEOUT
+                0x080062dc        0xc liblwipcore.a(memp.c.obj)
+                0x080062dc                memp_SYS_TIMEOUT
+ .rodata.memp_FRAG_PBUF
+                0x080062e8        0xc liblwipcore.a(memp.c.obj)
+                0x080062e8                memp_FRAG_PBUF
+ .rodata.memp_REASSDATA
+                0x080062f4        0xc liblwipcore.a(memp.c.obj)
+                0x080062f4                memp_REASSDATA
+ .rodata.memp_UDP_PCB
+                0x08006300        0xc liblwipcore.a(memp.c.obj)
+                0x08006300                memp_UDP_PCB
+ .rodata.lwip_cyclic_timers
+                0x0800630c       0x10 liblwipcore.a(timeouts.c.obj)
+                0x0800630c                lwip_cyclic_timers
+ .rodata.ip_addr_any
+                0x0800631c        0x4 liblwipcore.a(ip4_addr.c.obj)
+                0x0800631c                ip_addr_any
+ .rodata.ethzero
+                0x08006320        0x6 liblwipcore.a(ethernet.c.obj)
+                0x08006320                ethzero
+ *fill*         0x08006326        0x2 
+ .rodata.ethbroadcast
+                0x08006328        0x6 liblwipcore.a(ethernet.c.obj)
+                0x08006328                ethbroadcast
+ *(.glue_7)
+ .glue_7        0x0800632e        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0800632e        0x0 linker stubs
+ *(.eh_frame)
+ *(.ARM.extab*)
+ *(.ARM.exidx*)
+ *fill*         0x0800632e        0x2 
+ .ARM.exidx     0x08006330        0x8 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+
+.vfp11_veneer   0x08006338        0x0
+ .vfp11_veneer  0x08006338        0x0 linker stubs
+
+.v4_bx          0x08006338        0x0
+ .v4_bx         0x08006338        0x0 linker stubs
+
+.iplt           0x08006338        0x0
+ .iplt          0x08006338        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/startup_stm32f407xx.s.obj
+
+.rel.dyn        0x08006338        0x0
+ .rel.iplt      0x08006338        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/startup_stm32f407xx.s.obj
+
+.ARM.extab
+ *(.discard_arm_extab_dummy*)
+
+.ARM.exidx
+ *(.discard_arm_exidx_dummy*)
+
+.preinit_array
+ *(.preinit_array*)
+
+.init_array
+ *(.init_array*)
+
+.fini_array
+ *(.fini_array*)
+                0x08006338                        _sidata = LOADADDR (.data)
+
+.data           0x20000000      0x448 load address 0x08006338
+                0x20000000                        _sdata = .
+ *(.data*)
+ .data.jog_accel
+                0x20000000        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .data.jog_target_speed
+                0x20000004        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .data.SystemCoreClock
+                0x20000008        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+                0x20000008                SystemCoreClock
+ .data.uwTickFreq
+                0x2000000c        0x1 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x2000000c                uwTickFreq
+ *fill*         0x2000000d        0x3 
+ .data.uwTickPrio
+                0x20000010        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x20000010                uwTickPrio
+ .data.udp_port
+                0x20000014        0x2 liblwipcore.a(udp.c.obj)
+ *fill*         0x20000016        0x2 
+ .data          0x20000018      0x430 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+                0x20000018                _impure_ptr
+ *(.ramfunc*)
+                0x20000448                        _edata = .
+
+.igot.plt       0x20000448        0x0 load address 0x08006780
+ .igot.plt      0x20000448        0x0 CMakeFiles/XCORE407I_FIRMWARE.dir/startup_stm32f407xx.s.obj
+
+.ram            0x20000448      0x140 load address 0x08006780
+ .ram           0x20000448      0x140 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+
+.ccm_data       0x10000000        0x0
+                0x10000000                        _sccm = .
+ *(.ccmram*)
+                0x10000000                        _eccm = .
+
+.bss            0x20000588     0x91d0 load address 0x080068c0
+                0x20000588                        _sbss = .
+ *(.bss*)
+ .bss.idx.0     0x20000588        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+ .bss.Rx_Buff   0x2000058c     0x17d0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+ .bss.heth      0x20001d5c       0xb0 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+                0x20001d5c                heth
+ .bss.txData    0x20001e0c      0x100 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/remora_data.c.obj
+                0x20001e0c                txData
+ .bss.rxData    0x20001f0c      0x100 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/remora_data.c.obj
+                0x20001f0c                rxData
+ .bss.last_link_check.0
+                0x2000200c        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+ .bss.eth_stats
+                0x20002010       0x18 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+ .bss.g_netif   0x20002028       0x30 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj
+ .bss.last_client_port
+                0x20002058        0x2 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ *fill*         0x2000205a        0x2 
+ .bss.last_client_ip
+                0x2000205c        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .bss.rx_seq_gap_count
+                0x20002060        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .bss.rx_seq_last
+                0x20002064        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .bss.tx_seq    0x20002068        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .bss.remora_pcb
+                0x2000206c        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .bss.htim8     0x20002070       0x48 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+                0x20002070                htim8
+ .bss.htim3     0x200020b8       0x48 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+                0x200020b8                htim3
+ .bss.htim4     0x20002100       0x48 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+                0x20002100                htim4
+ .bss.current_speed.0
+                0x20002148        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .bss.jog_state
+                0x2000214c        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .bss.jog_db_count
+                0x20002154        0x8 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .bss.last_jog_update_ms
+                0x2000215c        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .bss.estop_active
+                0x20002160        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .bss.motion_fault_mask
+                0x20002164        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .bss.henc2     0x20002168       0x48 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+ .bss.henc1     0x200021b0       0x48 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+ .bss.henc3     0x200021f8       0x48 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+ .bss.uwTick    0x20002240        0x4 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x20002240                uwTick
+ .bss.lfree     0x20002244        0x4 liblwipcore.a(mem.c.obj)
+ .bss.ram_end   0x20002248        0x4 liblwipcore.a(mem.c.obj)
+ .bss.ram       0x2000224c        0x4 liblwipcore.a(mem.c.obj)
+ .bss.ram_heap  0x20002250     0x400c liblwipcore.a(mem.c.obj)
+                0x20002250                ram_heap
+ .bss.memp_tab_PBUF_POOL
+                0x2000625c        0x4 liblwipcore.a(memp.c.obj)
+ .bss.memp_memory_PBUF_POOL_base
+                0x20006260     0x3080 liblwipcore.a(memp.c.obj)
+                0x20006260                memp_memory_PBUF_POOL_base
+ .bss.memp_tab_PBUF
+                0x200092e0        0x4 liblwipcore.a(memp.c.obj)
+ .bss.memp_memory_PBUF_base
+                0x200092e4      0x100 liblwipcore.a(memp.c.obj)
+                0x200092e4                memp_memory_PBUF_base
+ .bss.memp_tab_SYS_TIMEOUT
+                0x200093e4        0x4 liblwipcore.a(memp.c.obj)
+ .bss.memp_memory_SYS_TIMEOUT_base
+                0x200093e8       0x40 liblwipcore.a(memp.c.obj)
+                0x200093e8                memp_memory_SYS_TIMEOUT_base
+ .bss.memp_tab_FRAG_PBUF
+                0x20009428        0x4 liblwipcore.a(memp.c.obj)
+ .bss.memp_memory_FRAG_PBUF_base
+                0x2000942c      0x168 liblwipcore.a(memp.c.obj)
+                0x2000942c                memp_memory_FRAG_PBUF_base
+ .bss.memp_tab_REASSDATA
+                0x20009594        0x4 liblwipcore.a(memp.c.obj)
+ .bss.memp_memory_REASSDATA_base
+                0x20009598       0xa0 liblwipcore.a(memp.c.obj)
+                0x20009598                memp_memory_REASSDATA_base
+ .bss.memp_tab_UDP_PCB
+                0x20009638        0x4 liblwipcore.a(memp.c.obj)
+ .bss.memp_memory_UDP_PCB_base
+                0x2000963c       0x80 liblwipcore.a(memp.c.obj)
+                0x2000963c                memp_memory_UDP_PCB_base
+ .bss.netif_num
+                0x200096bc        0x1 liblwipcore.a(netif.c.obj)
+ *fill*         0x200096bd        0x3 
+ .bss.netif_default
+                0x200096c0        0x4 liblwipcore.a(netif.c.obj)
+                0x200096c0                netif_default
+ .bss.netif_list
+                0x200096c4        0x4 liblwipcore.a(netif.c.obj)
+                0x200096c4                netif_list
+ .bss.current_timeout_due_time
+                0x200096c8        0x4 liblwipcore.a(timeouts.c.obj)
+ .bss.next_timeout
+                0x200096cc        0x4 liblwipcore.a(timeouts.c.obj)
+ .bss.ip_id     0x200096d0        0x2 liblwipcore.a(ip4.c.obj)
+ .bss.ip_reass_pbufcount
+                0x200096d2        0x2 liblwipcore.a(ip4_frag.c.obj)
+ .bss.reassdatagrams
+                0x200096d4        0x4 liblwipcore.a(ip4_frag.c.obj)
+ .bss.etharp_cached_entry
+                0x200096d8        0x1 liblwipcore.a(etharp.c.obj)
+ *fill*         0x200096d9        0x3 
+ .bss.arp_table
+                0x200096dc       0x60 liblwipcore.a(etharp.c.obj)
+ .bss.udp_pcbs  0x2000973c        0x4 liblwipcore.a(udp.c.obj)
+                0x2000973c                udp_pcbs
+ .bss.ip_data   0x20009740       0x18 liblwipcore.a(ip.c.obj)
+                0x20009740                ip_data
+ *(COMMON)
+                0x20009758                        _ebss = .
+
+._user_heap_stack
+                0x20009758     0x1800 load address 0x0800fa90
+                [!provide]                        PROVIDE (end = .)
+                0x20009758                        PROVIDE (_end = .)
+                0x2000a758                        . = (. + 0x1000)
+ *fill*         0x20009758     0x1000 
+                0x2000af58                        . = (. + 0x800)
+ *fill*         0x2000a758      0x800 
+OUTPUT(XCORE407I_FIRMWARE elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x35
+ .ARM.attributes
+                0x00000000       0x25 CMakeFiles/XCORE407I_FIRMWARE.dir/startup_stm32f407xx.s.obj
+ .ARM.attributes
+                0x00000025       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/main_xcore407i.cpp.obj
+ .ARM.attributes
+                0x00000059       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/system_clock.c.obj
+ .ARM.attributes
+                0x0000008d       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+ .ARM.attributes
+                0x000000c1       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/remora_data.c.obj
+ .ARM.attributes
+                0x000000f5       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+ .ARM.attributes
+                0x00000129       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj
+ .ARM.attributes
+                0x0000015d       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .ARM.attributes
+                0x00000191       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+ .ARM.attributes
+                0x000001c5       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .ARM.attributes
+                0x000001f9       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+ .ARM.attributes
+                0x0000022d       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+ .ARM.attributes
+                0x00000261       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .ARM.attributes
+                0x00000295       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .ARM.attributes
+                0x000002c9       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .ARM.attributes
+                0x000002fd       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .ARM.attributes
+                0x00000331       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .ARM.attributes
+                0x00000365       0x34 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .ARM.attributes
+                0x00000399       0x34 liblwipcore.a(init.c.obj)
+ .ARM.attributes
+                0x000003cd       0x34 liblwipcore.a(mem.c.obj)
+ .ARM.attributes
+                0x00000401       0x34 liblwipcore.a(memp.c.obj)
+ .ARM.attributes
+                0x00000435       0x34 liblwipcore.a(netif.c.obj)
+ .ARM.attributes
+                0x00000469       0x34 liblwipcore.a(pbuf.c.obj)
+ .ARM.attributes
+                0x0000049d       0x34 liblwipcore.a(timeouts.c.obj)
+ .ARM.attributes
+                0x000004d1       0x34 liblwipcore.a(def.c.obj)
+ .ARM.attributes
+                0x00000505       0x34 liblwipcore.a(ip4_addr.c.obj)
+ .ARM.attributes
+                0x00000539       0x34 liblwipcore.a(ip4.c.obj)
+ .ARM.attributes
+                0x0000056d       0x34 liblwipcore.a(ip4_frag.c.obj)
+ .ARM.attributes
+                0x000005a1       0x34 liblwipcore.a(etharp.c.obj)
+ .ARM.attributes
+                0x000005d5       0x34 liblwipcore.a(udp.c.obj)
+ .ARM.attributes
+                0x00000609       0x34 liblwipcore.a(ethernet.c.obj)
+ .ARM.attributes
+                0x0000063d       0x34 liblwipcore.a(sys_arch.c.obj)
+ .ARM.attributes
+                0x00000671       0x34 liblwipcore.a(ip.c.obj)
+ .ARM.attributes
+                0x000006a5       0x34 liblwipcore.a(inet_chksum.c.obj)
+ .ARM.attributes
+                0x000006d9       0x34 liblwipcore.a(icmp.c.obj)
+ .ARM.attributes
+                0x0000070d       0x22 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000072f       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x00000763       0x22 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000785       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000007b9       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+ .ARM.attributes
+                0x000007ed       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x0000080d       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000841       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+
+.comment        0x00000000       0x26
+ .comment       0x00000000       0x26 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/main_xcore407i.cpp.obj
+                                 0x27 (size before relaxing)
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/system_clock.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/ethernet_init.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/remora_data.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/ethernetif.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/lwip_port.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/lwip/remora_udp.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/stepgen.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/motion_io.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I/encoder.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
+ .comment       0x00000026       0x27 CMakeFiles/XCORE407I_FIRMWARE.dir/home/marios/XCore407I-Firmware/st/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .comment       0x00000026       0x27 liblwipcore.a(init.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(mem.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(memp.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(netif.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(pbuf.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(timeouts.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(def.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(ip4_addr.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(ip4.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(ip4_frag.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(etharp.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(udp.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(ethernet.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(sys_arch.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(ip.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(inet_chksum.c.obj)
+ .comment       0x00000026       0x27 liblwipcore.a(icmp.c.obj)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+
+.debug_line     0x00000000      0xc23
+ .debug_line    0x00000000       0x4e /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0000004e      0x576 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x000005c4       0x4a /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000060e       0xde /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .debug_line    0x000006ec      0x160 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+ .debug_line    0x0000084c       0xb9 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+ .debug_line    0x00000905      0x1b0 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .debug_line    0x00000ab5      0x16e /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+
+.debug_line_str
+                0x00000000      0x142
+ .debug_line_str
+                0x00000000       0x97 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line_str
+                0x00000097        0xc /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                                 0x9b (size before relaxing)
+ .debug_line_str
+                0x000000a3       0x9f /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+
+.debug_info     0x00000000     0x1b8b
+ .debug_info    0x00000000       0x24 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x00000024      0x6ef /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x00000713       0x39 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0000074c      0x8be /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .debug_info    0x0000100a      0x12b /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+ .debug_info    0x00001135       0x33 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+ .debug_info    0x00001168      0x135 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .debug_info    0x0000129d      0x8ee /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+
+.debug_abbrev   0x00000000      0x6e6
+ .debug_abbrev  0x00000000       0x14 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x00000014      0x16a /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x0000017e       0x1f /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x0000019d      0x1ca /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .debug_abbrev  0x00000367       0x90 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x000003f7       0x28 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000041f       0xb7 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .debug_abbrev  0x000004d6      0x210 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+
+.debug_aranges  0x00000000       0xf8
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_aranges
+                0x00000020       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_aranges
+                0x00000040       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x00000060       0x18 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .debug_aranges
+                0x00000078       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x00000098       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x000000b8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .debug_aranges
+                0x000000d8       0x20 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+
+.debug_str      0x00000000      0xda2
+ .debug_str     0x00000000       0xa3 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x000000a3      0x5d2 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                                0x676 (size before relaxing)
+ .debug_str     0x00000675       0x4c /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
+                                 0xc3 (size before relaxing)
+ .debug_str     0x000006c1      0x4b8 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+                                0x572 (size before relaxing)
+ .debug_str     0x00000b79       0x99 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+                                0x197 (size before relaxing)
+ .debug_str     0x00000c12       0xb2 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcpy.o)
+ .debug_str     0x00000cc4       0x4f /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+                                0x1ab (size before relaxing)
+ .debug_str     0x00000d13       0x8f /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+                                0x569 (size before relaxing)
+
+.debug_frame    0x00000000       0xf4
+ .debug_frame   0x00000000       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000002c       0x34 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00000060       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+ .debug_frame   0x0000008c       0x2c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .debug_frame   0x000000b8       0x3c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+
+.debug_loclists
+                0x00000000      0xcd0
+ .debug_loclists
+                0x00000000      0x993 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_loclists
+                0x00000993      0x163 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memcmp.o)
+ .debug_loclists
+                0x00000af6      0x1b6 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .debug_loclists
+                0x00000cac       0x24 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-rand.o)
+
+.debug_rnglists
+                0x00000000       0x89
+ .debug_rnglists
+                0x00000000       0x89 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)

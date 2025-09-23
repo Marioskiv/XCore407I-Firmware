@@ -1,0 +1,6 @@
+/home/marios/XCore407I-Firmware/build-ethgood/CMakeFiles/XCORE407I_FIRMWARE.dir
+/home/marios/XCore407I-Firmware/build-ethgood/CMakeFiles/flash_dfu.dir
+/home/marios/XCore407I-Firmware/build-ethgood/CMakeFiles/verify_flash.dir
+/home/marios/XCore407I-Firmware/build-ethgood/CMakeFiles/lwipcore.dir
+/home/marios/XCore407I-Firmware/build-ethgood/CMakeFiles/edit_cache.dir
+/home/marios/XCore407I-Firmware/build-ethgood/CMakeFiles/rebuild_cache.dir

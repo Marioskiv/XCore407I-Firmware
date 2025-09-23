@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+cab6d864d20d6c6f589bc2cb88aff59f targets/TARGET_XCORE407I/CMakeFiles/flash_dfu
+12eb9c82a2bc66fb9dade9179201bb32 targets/TARGET_XCORE407I/CMakeFiles/verify_flash

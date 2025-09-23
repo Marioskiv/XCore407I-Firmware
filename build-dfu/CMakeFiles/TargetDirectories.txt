@@ -1,0 +1,8 @@
+/home/marios/XCore407I-Firmware/build-dfu/CMakeFiles/edit_cache.dir
+/home/marios/XCore407I-Firmware/build-dfu/CMakeFiles/rebuild_cache.dir
+/home/marios/XCore407I-Firmware/build-dfu/targets/TARGET_XCORE407I/CMakeFiles/XCORE407I_FIRMWARE.dir
+/home/marios/XCore407I-Firmware/build-dfu/targets/TARGET_XCORE407I/CMakeFiles/flash_dfu.dir
+/home/marios/XCore407I-Firmware/build-dfu/targets/TARGET_XCORE407I/CMakeFiles/verify_flash.dir
+/home/marios/XCore407I-Firmware/build-dfu/targets/TARGET_XCORE407I/CMakeFiles/lwipcore.dir
+/home/marios/XCore407I-Firmware/build-dfu/targets/TARGET_XCORE407I/CMakeFiles/edit_cache.dir
+/home/marios/XCore407I-Firmware/build-dfu/targets/TARGET_XCORE407I/CMakeFiles/rebuild_cache.dir
