@@ -1,0 +1,82 @@
+﻿{
+  "subsystem": "usb_hs_ulpi",
+  "phy": "USB3300",
+  "interface": "ULPI",
+  "sources": ["XCore407I-Schematic.pdf", "USB3300 datasheet", "Waveshare XCore407I wiki"],
+  "components": [
+    {
+      "refdes": "U_USB3300",
+      "value": "USB3300",
+      "package": "QFN-32",
+      "pins": [
+        {"name": "CLKOUT", "net": "ULPI_CLK", "to_mcu": "PA5"},
+        {"name": "STP", "net": "ULPI_STP", "to_mcu": "PC0"},
+        {"name": "DIR", "net": "ULPI_DIR", "to_mcu": "PC2"},
+        {"name": "NXT", "net": "ULPI_NXT", "to_mcu": "PC3"},
+        {"name": "D0", "net": "ULPI_D0", "to_mcu": "PA3"},
+        {"name": "D1", "net": "ULPI_D1", "to_mcu": "PB0"},
+        {"name": "D2", "net": "ULPI_D2", "to_mcu": "PB1"},
+        {"name": "D3", "net": "ULPI_D3", "to_mcu": "PB10"},
+        {"name": "D4", "net": "ULPI_D4", "to_mcu": "PB11"},
+        {"name": "D5", "net": "ULPI_D5", "to_mcu": "PB12"},
+        {"name": "D6", "net": "ULPI_D6", "to_mcu": "PB13"},
+        {"name": "D7", "net": "ULPI_D7", "to_mcu": "PB5"},
+        {"name": "VBUS", "net": "HS_VBUS"},
+        {"name": "CPEN", "net": "HS_VBUS_EN", "to_mcu": "?"},
+        {"name": "RESET", "net": "HS_RESET", "to_mcu": "?"},
+        {"name": "VDD3V3", "net": "3V3"},
+        {"name": "VDD1V8", "net": "1V8"},
+        {"name": "RBIAS", "net": "USB3300_RBIAS"}
+      ]
+    },
+    {
+      "refdes": "X_USBHS",
+      "value": "24MHz crystal",
+      "pins": [
+        {"num": "1", "name": "XI", "net": "USB3300_XI"},
+        {"num": "2", "name": "XO", "net": "USB3300_XO"}
+      ]
+    },
+    {
+      "refdes": "U_PSW_HS",
+      "value": "MIC2075-1",
+      "role": "HS VBUS power switch",
+      "pins": [
+        {"name": "IN", "net": "5V_USB"},
+        {"name": "OUT", "net": "HS_VBUS"},
+        {"name": "EN", "net": "HS_VBUS_EN", "to_mcu": "?"},
+        {"name": "FLG", "net": "HS_FLG", "to_mcu": "?"},
+        {"name": "GND", "net": "GND"}
+      ]
+    }
+  ],
+  "nets": [
+    {"name": "ULPI_CLK", "nodes": ["U_USB3300:CLKOUT", "MCU:PA5"]},
+    {"name": "ULPI_STP", "nodes": ["U_USB3300:STP", "MCU:PC0"]},
+    {"name": "ULPI_DIR", "nodes": ["U_USB3300:DIR", "MCU:PC2"]},
+    {"name": "ULPI_NXT", "nodes": ["U_USB3300:NXT", "MCU:PC3"]},
+    {"name": "ULPI_D0", "nodes": ["U_USB3300:D0", "MCU:PA3"]},
+    {"name": "ULPI_D1", "nodes": ["U_USB3300:D1", "MCU:PB0"]},
+    {"name": "ULPI_D2", "nodes": ["U_USB3300:D2", "MCU:PB1"]},
+    {"name": "ULPI_D3", "nodes": ["U_USB3300:D3", "MCU:PB10"]},
+    {"name": "ULPI_D4", "nodes": ["U_USB3300:D4", "MCU:PB11"]},
+    {"name": "ULPI_D5", "nodes": ["U_USB3300:D5", "MCU:PB12"]},
+    {"name": "ULPI_D6", "nodes": ["U_USB3300:D6", "MCU:PB13"]},
+    {"name": "ULPI_D7", "nodes": ["U_USB3300:D7", "MCU:PB5"]},
+    {"name": "HS_VBUS", "nodes": ["U_PSW_HS:OUT", "U_USB3300:VBUS", "USB_HOST:VBUS"]},
+    {"name": "HS_VBUS_EN", "nodes": ["U_PSW_HS:EN", "U_USB3300:CPEN", "MCU:?"]},
+    {"name": "HS_FLG", "nodes": ["U_PSW_HS:FLG", "MCU:?"]},
+    {"name": "HS_RESET", "nodes": ["U_USB3300:RESET", "MCU:?"]},
+    {"name": "USB3300_XI", "nodes": ["X_USBHS:1", "U_USB3300:XI"]},
+    {"name": "USB3300_XO", "nodes": ["X_USBHS:2", "U_USB3300:XO"]}
+  ],
+  "decoupling": [
+    {"ref": "C1..C4", "values": ["100nF", "10uF"], "nets": ["3V3", "1V8", "GND"]},
+    {"ref": "C5..C6", "values": ["20pF"], "nets": ["USB3300_XI", "USB3300_XO"], "note": "crystal load"}
+  ],
+  "unknowns": [
+    {"field": "HS_VBUS_EN MCU pin", "value": "?"},
+    {"field": "HS_FLG MCU pin", "value": "?"},
+    {"field": "HS_RESET MCU pin", "value": "?"}
+  ]
+}

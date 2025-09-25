@@ -6,5 +6,5 @@ C_DEFINES = -DLWIP_TIMEVAL_PRIVATE=1 -DNO_SYS=1
 
 C_INCLUDES = -I/home/marios/XCore407I-Firmware/st/STM32CubeF4/Middlewares/Third_Party/LwIP/src/include -I/home/marios/XCore407I-Firmware/targets/TARGET_XCORE407I/lwip_port
 
-C_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -ffunction-sections -fdata-sections -fno-unwind-tables -fno-asynchronous-unwind-tables -Wall -Wextra -std=gnu11
+C_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -g -DNDEBUG -O2 -ffunction-sections -fdata-sections -fno-unwind-tables -fno-asynchronous-unwind-tables -Wall -Wextra -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -std=gnu11
 

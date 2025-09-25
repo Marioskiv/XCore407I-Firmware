@@ -1,0 +1,56 @@
+name: Firmware CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install ARM Toolchain
+        uses: carlosperate/arm-none-eabi-gcc-action@v1
+        with:
+          release: '13.2.Rel1'
+
+      - name: Install Python deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip cppcheck clang-tidy
+
+      - name: Configure
+        run: |
+          cmake -S targets/TARGET_XCORE407I -B build -DREMORA_STRICT=ON
+
+      - name: Build
+        run: cmake --build build -j
+
+      - name: Run Python tests
+        run: |
+          python3 tests/test_jog_ramp.py
+          python3 tests/test_packet_layout.py
+
+      - name: Static Analysis
+        run: bash scripts/run_static_analysis.sh
+
+      - name: Archive Firmware Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware-artifacts
+          path: |
+            build/XCORE407I_FIRMWARE
+            build/XCORE407I_FIRMWARE.bin
+            build/XCORE407I_FIRMWARE.map
+            build-analysis/cppcheck-report.txt
+            build-analysis/clang-tidy-report.txt
+
+      - name: Size Report
+        run: |
+          arm-none-eabi-size build/XCORE407I_FIRMWARE || true

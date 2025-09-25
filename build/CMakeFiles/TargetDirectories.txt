@@ -1,0 +1,7 @@
+/home/marios/XCore407I-Firmware/build/CMakeFiles/XCORE407I_FIRMWARE.dir
+/home/marios/XCore407I-Firmware/build/CMakeFiles/flash_dfu.dir
+/home/marios/XCore407I-Firmware/build/CMakeFiles/verify_flash.dir
+/home/marios/XCore407I-Firmware/build/CMakeFiles/lwipcore.dir
+/home/marios/XCore407I-Firmware/build/CMakeFiles/usbdcore.dir
+/home/marios/XCore407I-Firmware/build/CMakeFiles/edit_cache.dir
+/home/marios/XCore407I-Firmware/build/CMakeFiles/rebuild_cache.dir

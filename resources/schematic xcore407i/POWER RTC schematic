@@ -1,0 +1,93 @@
+﻿{
+  "subsystem": "power_rtc",
+  "sources": ["XCore407I-Schematic.pdf", "Waveshare XCore407I wiki"],
+  "rails": [
+    {"name": "5V_USB", "source": "USB connectors"},
+    {"name": "FS_USB_5V", "source": "MIC2075-2 OUT"},
+    {"name": "HS_USB_5V", "source": "MIC2075-1 OUT"},
+    {"name": "3V3", "source": "AMS1117-3.3 regulator"},
+    {"name": "3V3_A", "purpose": "Analog VDDA", "decoupling": ["10uF", "100nF"]},
+    {"name": "1V2_CORE", "purpose": "MCU core via VCAP1/VCAP2", "caps": ["2.2uF each"]},
+    {"name": "VBAT", "purpose": "RTC backup battery"}
+  ],
+  "components": [
+    {
+      "refdes": "U_REG1",
+      "value": "AMS1117-3.3",
+      "pins": [
+        {"name": "IN", "net": "5V_USB"},
+        {"name": "OUT", "net": "3V3"},
+        {"name": "GND", "net": "GND"}
+      ]
+    },
+    {
+      "refdes": "U_PSW_FS",
+      "value": "MIC2075-2",
+      "role": "USB FS VBUS switch",
+      "pins": [
+        {"name": "IN", "net": "5V_USB"},
+        {"name": "OUT", "net": "FS_USB_5V"},
+        {"name": "EN", "net": "FS_VBUS_EN", "to_mcu": "?"},
+        {"name": "FLG", "net": "FS_FLG", "to_mcu": "?"},
+        {"name": "GND", "net": "GND"}
+      ]
+    },
+    {
+      "refdes": "U_PSW_HS",
+      "value": "MIC2075-1",
+      "role": "USB HS VBUS switch",
+      "pins": [
+        {"name": "IN", "net": "5V_USB"},
+        {"name": "OUT", "net": "HS_USB_5V"},
+        {"name": "EN", "net": "HS_VBUS_EN", "to_mcu": "?"},
+        {"name": "FLG", "net": "HS_FLG", "to_mcu": "?"},
+        {"name": "GND", "net": "GND"}
+      ]
+    },
+    {
+      "refdes": "BAT1",
+      "value": "Coin cell",
+      "pins": [
+        {"name": "+", "net": "VBAT"},
+        {"name": "-", "net": "GND"}
+      ]
+    },
+    {
+      "refdes": "X_LSE",
+      "value": "32.768kHz crystal",
+      "pins": [
+        {"name": "1", "net": "PC14"},
+        {"name": "2", "net": "PC15"}
+      ],
+      "load_caps": ["20pF", "20pF"],
+      "bias_res": "10MΩ"
+    },
+    {
+      "refdes": "X_HSE",
+      "value": "8MHz crystal",
+      "pins": [
+        {"name": "1", "net": "PH0"},
+        {"name": "2", "net": "PH1"}
+      ],
+      "load_caps": ["20pF", "20pF"]
+    }
+  ],
+  "mcu_power_pins": [
+    {"name": "VDDx", "net": "3V3"},
+    {"name": "VSSx", "net": "GND"},
+    {"name": "VDDA", "net": "3V3_A"},
+    {"name": "VSSA", "net": "GND"},
+    {"name": "VCAP1", "net": "1V2_CORE"},
+    {"name": "VCAP2", "net": "1V2_CORE"},
+    {"name": "VREF+", "net": "VREF+"},
+    {"name": "VBAT", "net": "VBAT"}
+  ],
+  "decoupling": [
+    {"ref": "C1..C10", "value": "100nF", "nets": ["3V3", "GND"], "note": "distributed near MCU"},
+    {"ref": "C11..C12", "value": "2.2uF", "nets": ["VCAP1", "VCAP2"], "note": "core regulator caps"},
+    {"ref": "C13..C14", "value": "10uF", "nets": ["3V3_A", "GND"], "note": "analog supply decoupling"}
+  ],
+  "unknowns": [
+    {"field": "Exact MCU pins for FS_VBUS_EN/FLG and HS_VBUS_EN/FLG", "value": "?"}
+  ]
+}

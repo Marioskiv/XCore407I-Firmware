@@ -1,0 +1,48 @@
+﻿{
+  "subsystem": "usb_fs_otg",
+  "connector": "Mini-USB (Device/OTG)",
+  "sources": ["XCore407I-Schematic.pdf", "STM32F407 datasheet", "Waveshare XCore407I wiki"],
+  "components": [
+    {
+      "refdes": "J_USB_FS",
+      "value": "Mini-USB",
+      "pins": [
+        {"num": "1", "name": "VBUS", "net": "FS_USB_5V", "to_mcu": "PA9"},
+        {"num": "2", "name": "D-", "net": "USB_FS_DM", "series_res": "22Ω", "to_mcu": "PA11"},
+        {"num": "3", "name": "D+", "net": "USB_FS_DP", "series_res": "22Ω", "to_mcu": "PA12"},
+        {"num": "4", "name": "ID", "net": "USB_FS_ID", "to_mcu": "PA10"},
+        {"num": "5", "name": "GND", "net": "GND"},
+        {"name": "SHIELD", "net": "USB_SHIELD", "note": "connected via RC to GND"}
+      ]
+    },
+    {
+      "refdes": "U_PSW_FS",
+      "value": "MIC2075-2",
+      "role": "FS VBUS power switch",
+      "pins": [
+        {"name": "IN", "net": "5V_USB"},
+        {"name": "OUT", "net": "FS_USB_5V"},
+        {"name": "EN", "net": "FS_VBUS_EN", "to_mcu": "?"},
+        {"name": "FLG", "net": "FS_FLG", "to_mcu": "?"},
+        {"name": "GND", "net": "GND"}
+      ]
+    }
+  ],
+  "nets": [
+    {"name": "USB_FS_DP", "nodes": ["J_USB_FS:3", "R22:22Ω", "MCU:PA12"]},
+    {"name": "USB_FS_DM", "nodes": ["J_USB_FS:2", "R21:22Ω", "MCU:PA11"]},
+    {"name": "USB_FS_ID", "nodes": ["J_USB_FS:4", "MCU:PA10"]},
+    {"name": "FS_USB_5V", "nodes": ["U_PSW_FS:OUT", "J_USB_FS:1", "MCU:PA9"]},
+    {"name": "USB_SHIELD", "nodes": ["J_USB_FS:SHIELD", "RC_to_GND:330Ω//47nF", "GND"]},
+    {"name": "FS_VBUS_EN", "nodes": ["U_PSW_FS:EN", "MCU:?"]},
+    {"name": "FS_FLG", "nodes": ["U_PSW_FS:FLG", "MCU:?"]}
+  ],
+  "decoupling": [
+    {"ref": "C_USB1", "value": "4.7uF", "net": "FS_USB_5V"},
+    {"ref": "C_USB2", "value": "100nF", "net": "FS_USB_5V"}
+  ],
+  "unknowns": [
+    {"field": "FS_VBUS_EN MCU pin", "value": "?"},
+    {"field": "FS_FLG MCU pin", "value": "?"}
+  ]
+}

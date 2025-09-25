@@ -1,0 +1,42 @@
+﻿{
+  "subsystem": "nand_flash",
+  "chip": "K9F1G08U0C",
+  "package": "TSOP-48",
+  "bus": "FSMC 8-bit",
+  "sources": ["XCore407I-Schematic.pdf", "Samsung K9F1G08U0C datasheet"],
+  "pins": [
+    {"num": "29", "name": "I/O0", "net": "FSMC_D0", "to_mcu": "PD14"},
+    {"num": "30", "name": "I/O1", "net": "FSMC_D1", "to_mcu": "PD15"},
+    {"num": "31", "name": "I/O2", "net": "FSMC_D2", "to_mcu": "PD0"},
+    {"num": "32", "name": "I/O3", "net": "FSMC_D3", "to_mcu": "PD1"},
+    {"num": "41", "name": "I/O4", "net": "FSMC_D4", "to_mcu": "PE7"},
+    {"num": "42", "name": "I/O5", "net": "FSMC_D5", "to_mcu": "PE8"},
+    {"num": "43", "name": "I/O6", "net": "FSMC_D6", "to_mcu": "PE9"},
+    {"num": "44", "name": "I/O7", "net": "FSMC_D7", "to_mcu": "PE10"},
+
+    {"num": "9", "name": "CE#", "net": "FSMC_NE2", "to_mcu": "PG9"},
+    {"num": "8", "name": "RE#", "net": "FSMC_NOE", "to_mcu": "PD4"},
+    {"num": "18", "name": "WE#", "net": "FSMC_NWE", "to_mcu": "PD5"},
+    {"num": "17", "name": "ALE", "net": "FSMC_A16", "to_mcu": "PD11"},
+    {"num": "16", "name": "CLE", "net": "FSMC_A17", "to_mcu": "PD12"},
+    {"num": "7", "name": "R/B#", "net": "FSMC_NWAIT", "to_mcu": "PD6"},
+
+    {"num": "12", "name": "VCC", "net": "3V3"},
+    {"num": "36", "name": "VSS", "net": "GND"},
+    {"num": "22", "name": "NC", "net": "Not connected"},
+    {"num": "23", "name": "NC", "net": "Not connected"}
+  ],
+  "pullups": [
+    {"net": "FSMC_NWAIT", "value": "10kΩ", "note": "pull-up on R/B#"},
+    {"net": "FSMC_NE2", "value": "0Ω/10kΩ", "note": "strap resistor"}
+  ],
+  "nets": [
+    {"name": "FSMC_D0..D7", "nodes": ["NAND:29-44", "MCU:PD14,PD15,PD0,PD1,PE7,PE8,PE9,PE10"]},
+    {"name": "FSMC_NOE", "nodes": ["NAND:8", "MCU:PD4"]},
+    {"name": "FSMC_NWE", "nodes": ["NAND:18", "MCU:PD5"]},
+    {"name": "FSMC_NE2", "nodes": ["NAND:9", "MCU:PG9"]},
+    {"name": "FSMC_A16 (ALE)", "nodes": ["NAND:17", "MCU:PD11"]},
+    {"name": "FSMC_A17 (CLE)", "nodes": ["NAND:16", "MCU:PD12"]},
+    {"name": "FSMC_NWAIT (R/B#)", "nodes": ["NAND:7", "MCU:PD6"]}
+  ]
+}

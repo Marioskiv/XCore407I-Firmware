@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build firmware with USB CDC",
+			"type": "shell",
+			"command": "cmake --build build -j",
+			"group": "build"
+		},
+		{
+			"label": "Rebuild after adding USB includes",
+			"type": "shell",
+			"command": "cmake --build build -j",
+			"group": "build"
+		},
+		{
+			"label": "Rebuild after including HAL headers for USB",
+			"type": "shell",
+			"command": "cmake --build build -j",
+			"group": "build"
+		},
+		{
+			"label": "Rebuild after USB descriptor/usbd_conf fixes",
+			"type": "shell",
+			"command": "cmake --build build -j",
+			"group": "build"
+		},
+		{
+			"label": "Build firmware with USB CDC",
+			"type": "shell",
+			"command": "cmake --build build -j",
+			"group": "build"
+		},
+		{
+			"label": "Build firmware with USB CDC",
+			"type": "shell",
+			"command": "cmake --build build -j",
+			"group": "build"
+		},
+		{
+			"label": "CMake configure + build XCORE407I_FIRMWARE",
+			"type": "shell",
+			"command": "bash -lc \"cmake -S . -B build && cmake --build build -j\"",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		}
+	]
+}

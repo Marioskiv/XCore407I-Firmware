@@ -1,0 +1,31 @@
+{
+  "high_priority": [
+    {"name": "XCore407I_Schematic.pdf", "target_dir": "schematic", "url": "<WIKI_URL>/XCore407I_Schematic.pdf"},
+    {"name": "XCore407I_User_Manual.pdf", "target_dir": "manuals", "url": "<WIKI_URL>/XCore407I_User_Manual.pdf"},
+    {"name": "STM32F405_407_Datasheet.pdf", "target_dir": "datasheets", "url": "https://www.st.com/resource/en/datasheet/stm32f405rg.pdf"},
+    {"name": "RM0090_Reference_Manual.pdf", "target_dir": "datasheets", "url": "https://www.st.com/resource/en/reference_manual/dm00031020.pdf"},
+    {"name": "STM32CubeMX_latest", "target_dir": "tools", "url": "https://www.st.com/en/development-tools/stm32cubemx.html"},
+    {"name": "STM32CubeF4_HAL.zip", "target_dir": "tools", "url": "https://www.st.com/en/embedded-software/stm32cubef4.html"},
+    {"name": "ST-LINK_Utility.zip", "target_dir": "tools", "url": "https://www.st.com/en/development-tools/stsw-link004.html"},
+    {"name": "ST-LINK_V2_USB_Driver", "target_dir": "drivers", "url": "https://www.st.com/en/development-tools/stsw-link009.html"},
+    {"name": "VCP_Virtual_COM_Port_Driver", "target_dir": "drivers", "url": "https://www.st.com/en/development-tools/stsw-stm32102.html"}
+  ],
+  "medium_priority": [
+    {"name": "TCP_UDP_Debugger", "target_dir": "tools", "url": "<WIKI_OR_ALT_URL>/TCP_UDP_Debugger.zip"},
+    {"name": "IpTool", "target_dir": "tools", "url": "<WIKI_OR_ALT_URL>/IpTool.zip"},
+    {"name": "Flash_Loader_Demonstrator", "target_dir": "tools", "url": "https://www.st.com/en/development-tools/flasher-stm32.html"},
+    {"name": "STVP_ST_Visual_Programmer", "target_dir": "tools", "url": "https://www.st.com/en/development-tools/stvp-stm32.html"},
+    {"name": "STLinkUpgrade", "target_dir": "tools", "url": "https://www.st.com/en/development-tools/stsw-link007.html"}
+  ],
+  "optional": [
+    {"name": "STM32F4xx_DSP_StdPeriph_Lib.7z", "target_dir": "examples", "url": "https://www.st.com/en/embedded-software/stsw-stm32065.html"},
+    {"name": "STM32F4_Eeprom_Emulation.7z", "target_dir": "examples", "url": "https://www.st.com/en/embedded-software/stsw-stm32123.html"},
+    {"name": "STM32F417_ETH_SSL.7z", "target_dir": "examples", "url": "<WIKI_OR_ALT_URL>/STM32F417_ETH_SSL.7z"},
+    {"name": "STM32_I2C_CPAL.7z", "target_dir": "examples", "url": "https://www.st.com/en/embedded-software/stsw-stm32132.html"},
+    {"name": "UCOS_Source.zip", "target_dir": "examples", "url": "<WIKI_OR_ALT_URL>/UCOS_Source.zip"},
+    {"name": "UCGUI3.90_Source.zip", "target_dir": "examples", "url": "<WIKI_OR_ALT_URL>/UCGUI3.90_Source.zip"},
+    {"name": "XCore407I_Demo_Firmware.zip", "target_dir": "examples", "url": "<WIKI_URL>/Demo_Firmware.zip"},
+    {"name": "XCore407I_3D_Model.stp", "target_dir": "examples", "url": "<WIKI_URL>/XCore407I_3D.stp"}
+  ],
+  "notes": "Items with <WIKI_URL> or <WIKI_OR_ALT_URL> require manual sourcing from the vendor or board wiki. Some ST downloads require account login and EULA acceptance."
+}

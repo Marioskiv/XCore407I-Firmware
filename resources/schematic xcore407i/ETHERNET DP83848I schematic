@@ -1,0 +1,72 @@
+﻿{
+  "subsystem": "ethernet",
+  "phy": "DP83848I",
+  "interface": "RMII",
+  "clock": "50MHz crystal",
+  "sources": ["XCore407I-Schematic.pdf", "DP83848I datasheet", "Waveshare XCore407I wiki"],
+  "components": [
+    {
+      "refdes": "U1",
+      "value": "DP83848I",
+      "package": "LQFP-48",
+      "pins": [
+        {"num": "1", "name": "TX_CLK", "net": "ETH_TX_CLK", "note": "MII only"},
+        {"num": "2", "name": "TX_EN", "net": "ETH_TX_EN", "to_mcu": "PB11"},
+        {"num": "3", "name": "TXD0", "net": "ETH_TXD0", "to_mcu": "PB12"},
+        {"num": "4", "name": "TXD1", "net": "ETH_TXD1", "to_mcu": "PB13"},
+        {"num": "7", "name": "RXD0", "net": "ETH_RXD0", "to_mcu": "PC4"},
+        {"num": "8", "name": "RXD1", "net": "ETH_RXD1", "to_mcu": "PC5"},
+        {"num": "11", "name": "RX_DV", "net": "ETH_RX_DV", "to_mcu": "PA7"},
+        {"num": "15", "name": "MDIO", "net": "ETH_MDIO", "to_mcu": "PA2"},
+        {"num": "16", "name": "MDC", "net": "ETH_MDC", "to_mcu": "PC1"},
+        {"num": "17", "name": "RESET_N", "net": "ETH_RESET_N", "to_mcu": "NRST"},
+        {"num": "18", "name": "25MHZ_OUT", "net": "ETH_25MHZ_OUT", "note": "optional ref clock"},
+        {"num": "19", "name": "INT/PWRDOWN", "net": "ETH_INT", "to_mcu": "?"},
+        {"num": "20", "name": "LED_LINK", "net": "LED_LINK", "note": "to RJ45 LED"},
+        {"num": "21", "name": "LED_ACT", "net": "LED_ACT", "note": "to RJ45 LED"},
+        {"num": "26", "name": "RBIAS", "net": "ETH_RBIAS", "note": "12.1kΩ to GND"},
+        {"num": "30", "name": "TD+", "net": "ETH_TD_P", "to": "RJ45"},
+        {"num": "31", "name": "TD-", "net": "ETH_TD_N", "to": "RJ45"},
+        {"num": "32", "name": "RD+", "net": "ETH_RD_P", "to": "RJ45"},
+        {"num": "33", "name": "RD-", "net": "ETH_RD_N", "to": "RJ45"},
+        {"num": "34", "name": "MODE", "net": "RMII_MODE", "strap": "RMII"},
+        {"num": "36", "name": "PHYAD0", "net": "PHYAD0", "strap": "0/1"},
+        {"num": "37", "name": "PHYAD1", "net": "PHYAD1", "strap": "0/1"},
+        {"num": "38", "name": "PHYAD2", "net": "PHYAD2", "strap": "0/1"},
+        {"num": "39", "name": "PHYAD3", "net": "PHYAD3", "strap": "0/1"},
+        {"num": "40", "name": "PHYAD4", "net": "PHYAD4", "strap": "0/1"}
+      ]
+    },
+    {
+      "refdes": "X1",
+      "value": "50MHz crystal",
+      "pins": [
+        {"num": "1", "name": "OSCIN", "net": "ETH_OSCIN"},
+        {"num": "2", "name": "OSCOUT", "net": "ETH_OSCOUT"}
+      ]
+    }
+  ],
+  "nets": [
+    {"name": "ETH_TX_EN", "nodes": ["U1:2", "MCU:PB11"]},
+    {"name": "ETH_TXD0", "nodes": ["U1:3", "MCU:PB12"]},
+    {"name": "ETH_TXD1", "nodes": ["U1:4", "MCU:PB13"]},
+    {"name": "ETH_RXD0", "nodes": ["U1:7", "MCU:PC4"]},
+    {"name": "ETH_RXD1", "nodes": ["U1:8", "MCU:PC5"]},
+    {"name": "ETH_RX_DV", "nodes": ["U1:11", "MCU:PA7"]},
+    {"name": "ETH_MDIO", "nodes": ["U1:15", "MCU:PA2"]},
+    {"name": "ETH_MDC", "nodes": ["U1:16", "MCU:PC1"]},
+    {"name": "ETH_TD_P", "nodes": ["U1:30", "RJ45:TD_P"]},
+    {"name": "ETH_TD_N", "nodes": ["U1:31", "RJ45:TD_N"]},
+    {"name": "ETH_RD_P", "nodes": ["U1:32", "RJ45:RD_P"]},
+    {"name": "ETH_RD_N", "nodes": ["U1:33", "RJ45:RD_N"]}
+  ],
+  "magnetics": {
+    "connector": "RJ45 with integrated magnetics",
+    "signals": ["TD±", "RD±"],
+    "leds": ["LED_LINK", "LED_ACT"]
+  },
+  "unknowns": [
+    
+    {"field": "INT MCU pin", "value": "?"}
+  ]
+}

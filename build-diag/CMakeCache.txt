@@ -20,8 +20,14 @@ ARM_GCC:FILEPATH=/usr/bin/arm-none-eabi-gcc
 //Path to a program.
 ARM_GPP:FILEPATH=/usr/bin/arm-none-eabi-g++
 
-//No help, variable specified on the command line.
-BOARD_ENABLE_ETH:UNINITIALIZED=1
+//Enable Ethernet RMII (DP83848I)
+BOARD_ENABLE_ETH:BOOL=ON
+
+//Enable NAND Flash interface
+BOARD_ENABLE_NAND:BOOL=OFF
+
+//Enable USB HS ULPI (conflicts with Ethernet pins PB12/PB13)
+BOARD_ENABLE_ULPI:BOOL=OFF
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/arm-none-eabi-addr2line
@@ -57,7 +63,7 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=RelWithDebInfo
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -246,14 +252,26 @@ CMAKE_STRIP:FILEPATH=/usr/bin/arm-none-eabi-strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Produce trimmed DFU binary without padding gaps
+DFU_TRIM_BIN:BOOL=ON
+
 //Path to a program.
 DFU_UTIL:FILEPATH=/usr/bin/dfu-util
 
 //Enable QEI diagnostic helper (requires USE_ABSTRACT_DRIVERS)
 ENABLE_QEI_DIAG:BOOL=ON
 
+//Clear heth.Init descriptor pointers after HAL init (legacy behavior)
+ETH_CLEAR_DESC_PTRS_POST_INIT:BOOL=OFF
+
+//Skip dynamic PHY scan and use fixed PHY_ADDRESS
+ETH_DISABLE_PHY_SCAN:BOOL=OFF
+
 //Enable MAC hardware checksum offload
 ETH_HW_CHECKSUM:BOOL=OFF
+
+//Place ETH DMA descriptors in CCM section (legacy experimental)
+ETH_LEGACY_DESC_IN_CCM:BOOL=OFF
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
@@ -261,7 +279,7 @@ GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 //Treat warnings as errors
 REMORA_STRICT:BOOL=ON
 
-//Enable abstract pin & QEI drivers
+//Enable abstract pin & QEI drivers (working Ethernet profile default)
 USE_ABSTRACT_DRIVERS:BOOL=ON
 
 //Use PG11 as RMII TX_EN (else PB11)

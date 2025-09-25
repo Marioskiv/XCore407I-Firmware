@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+971ac392ccfe057b22ddc54e1a2d1ba7 CMakeFiles/flash_dfu
+94e35a2eb3af54a533db491fb9ad56dd CMakeFiles/verify_flash
