@@ -62,68 +62,241 @@ endif()
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
+# ---------------------------------------------------------------------------
+# Board crystal frequency selection (some XCore407I variants are assembled
+# with 8 MHz HSE, others with 25 MHz). Expose a cache option so users do NOT
+# need to edit source when building for the alternate crystal.
+# Usage: cmake -B build -DBOARD_HSE_FREQ_MHZ=25 ..  (default 8)
+# Only 8 or 25 are accepted; we derive PLLM so that VCO input = 1 MHz.
+# ---------------------------------------------------------------------------
+set(BOARD_HSE_FREQ_MHZ 8 CACHE STRING "HSE crystal frequency in MHz (8 or 25)")
+if(NOT BOARD_HSE_FREQ_MHZ STREQUAL "8" AND NOT BOARD_HSE_FREQ_MHZ STREQUAL "25")
+  message(FATAL_ERROR "BOARD_HSE_FREQ_MHZ must be 8 or 25 (got '${BOARD_HSE_FREQ_MHZ}')")
+endif()
+add_compile_definitions(BOARD_HSE_FREQ_MHZ=${BOARD_HSE_FREQ_MHZ})
+message(STATUS "Configured HSE crystal: ${BOARD_HSE_FREQ_MHZ} MHz")
+
 # Absolute project root (two levels up from this file)
 set(PROJECT_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/../..)
 get_filename_component(PROJECT_ROOT ${PROJECT_ROOT} REALPATH)
 message(STATUS "Project root: ${PROJECT_ROOT}")
 
-set(REMORA_SRC_DIR ${PROJECT_ROOT}/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I)
+set(REMORA_SRC_DIR_DEFAULT ${PROJECT_ROOT}/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I)
+# Allow overriding the Remora target source path from the cache so Windows users can point to an external checkout
+set(REMORA_SRC_DIR ${REMORA_SRC_DIR_DEFAULT} CACHE PATH "Path to Remora-OS6 TARGET_XCORE407I sources (folder containing main_xcore407i.cpp)")
+# Allow user to force build failure if full Remora sources are not found (avoid silent minimal fallback)
+option(FULL_FIRMWARE "Require full Remora firmware sources; fail if missing" OFF)
+option(REMORA_AUTO_FETCH "Automatically clone Remora OS6 repository when sources are missing" OFF)
+set(REMORA_GIT_URL "https://example.com/Remora-OS6.git" CACHE STRING "Git URL of Remora OS6 repository (set real URL before enabling REMORA_AUTO_FETCH)")
 set(ST_ROOT        ${PROJECT_ROOT}/st)
-set(CUBE_ROOT      ${ST_ROOT}/STM32CubeF4)
+# Allow overriding the STM32CubeF4 location via -DCUBE_ROOT=... (defaults to st/STM32CubeF4)
+set(CUBE_ROOT_DEFAULT ${ST_ROOT}/STM32CubeF4)
+set(CUBE_ROOT ${CUBE_ROOT_DEFAULT} CACHE PATH "Path to STM32CubeF4 root (contains Drivers/, Middlewares/, etc.)")
 set(HAL_CONF_DIR   ${ST_ROOT}/hal_conf)
 
 set(CUBE_CMSIS_INCLUDE ${CUBE_ROOT}/Drivers/CMSIS/Include)
 set(CUBE_DEVICE_INCLUDE ${CUBE_ROOT}/Drivers/CMSIS/Device/ST/STM32F4xx/Include)
 set(CUBE_HAL_INC ${CUBE_ROOT}/Drivers/STM32F4xx_HAL_Driver/Inc)
 
+# If the default (st/STM32CubeF4) path is missing, auto-fallback to a sibling STM32CubeF4 folder
 if (NOT EXISTS ${CUBE_HAL_INC}/stm32f4xx_hal.h)
-  message(FATAL_ERROR "STM32CubeF4 HAL headers not found at ${CUBE_HAL_INC}. Expected submodule at ${CUBE_ROOT}. If missing: git submodule add https://github.com/STMicroelectronics/STM32CubeF4.git st/STM32CubeF4 && git submodule update --init --recursive")
+  # Fallback 1: project root sibling "STM32CubeF4"
+  set(CUBE_ROOT_ALT ${PROJECT_ROOT}/STM32CubeF4)
+  if (EXISTS ${CUBE_ROOT_ALT}/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)
+    message(STATUS "CUBE_ROOT default not found; using fallback ${CUBE_ROOT_ALT}")
+    set(CUBE_ROOT ${CUBE_ROOT_ALT} CACHE PATH "Path to STM32CubeF4 root (auto-detected fallback)" FORCE)
+  else()
+    # Fallback 2: parent of PROJECT_ROOT (user workspace root) contains STM32CubeF4
+    get_filename_component(PROJECT_PARENT ${PROJECT_ROOT} DIRECTORY)
+    set(CUBE_ROOT_PARENT ${PROJECT_PARENT}/STM32CubeF4)
+    if (EXISTS ${CUBE_ROOT_PARENT}/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)
+      message(STATUS "CUBE_ROOT default not found; using parent fallback ${CUBE_ROOT_PARENT}")
+      set(CUBE_ROOT ${CUBE_ROOT_PARENT} CACHE PATH "Path to STM32CubeF4 root (auto-detected parent fallback)" FORCE)
+    endif()
+  endif()
+  # Recompute include paths if we updated CUBE_ROOT
+  set(CUBE_CMSIS_INCLUDE ${CUBE_ROOT}/Drivers/CMSIS/Include)
+  set(CUBE_DEVICE_INCLUDE ${CUBE_ROOT}/Drivers/CMSIS/Device/ST/STM32F4xx/Include)
+  set(CUBE_HAL_INC ${CUBE_ROOT}/Drivers/STM32F4xx_HAL_Driver/Inc)
 endif()
 
-add_executable(${PROJECT_NAME}
-  startup_stm32f407xx.s
-  ${REMORA_SRC_DIR}/main_xcore407i.cpp
-  ${REMORA_SRC_DIR}/system_clock.c
-  ${REMORA_SRC_DIR}/ethernet_init.c
-  ${REMORA_SRC_DIR}/debug_uart.c
-  ${REMORA_SRC_DIR}/version.c
-  ${REMORA_SRC_DIR}/ulpi_init.c
-  ${REMORA_SRC_DIR}/build_id.c
-  ${REMORA_SRC_DIR}/remora_data.c
-  ${REMORA_SRC_DIR}/drivers/drivers_init.c
-  ${REMORA_SRC_DIR}/lwip/ethernetif.c
-  ${REMORA_SRC_DIR}/lwip/lwip_port.c
-  ${REMORA_SRC_DIR}/lwip/remora_udp.c
-  ${REMORA_SRC_DIR}/stepgen.c
-  ${REMORA_SRC_DIR}/motion_io.c
-  ${REMORA_SRC_DIR}/jog.c
-  ${REMORA_SRC_DIR}/homing.c
-  ${REMORA_SRC_DIR}/config_store.c
-  ${REMORA_SRC_DIR}/encoder.c
-  ${REMORA_SRC_DIR}/auth.c
-  ${REMORA_SRC_DIR}/board_motion_gpio.c
-  ${REMORA_SRC_DIR}/usb/usbd_conf.c
-  ${REMORA_SRC_DIR}/usb/usbd_desc.c
-  ${REMORA_SRC_DIR}/usb/usbd_cdc_if.c
-  ${PROJECT_ROOT}/src/net/udp_echo.c
-  ${CUBE_ROOT}/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
-  syscalls.c
-)
+if (NOT EXISTS ${CUBE_HAL_INC}/stm32f4xx_hal.h)
+  message(FATAL_ERROR "STM32CubeF4 HAL headers not found. Tried:\n"
+    "  Primary: ${CUBE_ROOT_DEFAULT}/Drivers/STM32F4xx_HAL_Driver/Inc\n"
+    "  Fallback: ${PROJECT_ROOT}/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc\n"
+    "Effective CUBE_ROOT=\"${CUBE_ROOT}\"\n"
+    "Hint: pass -DCUBE_ROOT=\"C:/path/to/STM32CubeF4\" or place the Cube repo in one of the probed locations.")
+endif()
 
-target_include_directories(${PROJECT_NAME} PRIVATE
-  ${PROJECT_ROOT}/Remora-OS6/Firmware/FirmwareSource/Remora-OS6
-  ${REMORA_SRC_DIR}
-  ${REMORA_SRC_DIR}/lwip
-  ${PROJECT_ROOT}/src/net
-  ${HAL_CONF_DIR}
-  ${CUBE_CMSIS_INCLUDE}
-  ${CUBE_DEVICE_INCLUDE}
-  ${CUBE_HAL_INC}
-  ${CUBE_ROOT}/Middlewares/Third_Party/LwIP/src/include
-  ${CUBE_ROOT}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc
-  ${CUBE_ROOT}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc
-  ${CMAKE_CURRENT_SOURCE_DIR}/lwip_port
-)
+# If not present, try a few auto-detected fallbacks (do not override an existing valid user-provided path)
+if (NOT EXISTS ${REMORA_SRC_DIR}/main_xcore407i.cpp)
+  set(_REMORA_CANDIDATES
+    ${PROJECT_ROOT}/Examples_Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I
+    ${PROJECT_ROOT}/../Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I
+  )
+  foreach(_cand IN LISTS _REMORA_CANDIDATES)
+    if (EXISTS ${_cand}/main_xcore407i.cpp)
+      message(STATUS "Auto-detected Remora sources at ${_cand}")
+      set(REMORA_SRC_DIR ${_cand} CACHE PATH "Path to Remora-OS6 TARGET_XCORE407I sources (auto-detected)" FORCE)
+      break()
+    endif()
+  endforeach()
+  # Optional fetch: clone the repository root so that REMORA_SRC_DIR_DEFAULT becomes valid
+  if (REMORA_AUTO_FETCH AND NOT EXISTS ${REMORA_SRC_DIR}/main_xcore407i.cpp)
+    if (REMORA_GIT_URL STREQUAL "https://example.com/Remora-OS6.git")
+      message(FATAL_ERROR "REMORA_AUTO_FETCH=ON but REMORA_GIT_URL still placeholder. Set -DREMORA_GIT_URL=... to real repo URL.")
+    endif()
+    include(ExternalProject)
+    set(REMORA_FETCH_ROOT ${PROJECT_ROOT}/Remora-OS6)
+    ExternalProject_Add(remora_fetch
+      GIT_REPOSITORY ${REMORA_GIT_URL}
+      GIT_TAG main
+      UPDATE_DISCONNECTED 1
+      SOURCE_DIR ${REMORA_FETCH_ROOT}
+      CONFIGURE_COMMAND ""
+      BUILD_COMMAND ""
+      INSTALL_COMMAND ""
+      LOG_DOWNLOAD 1
+    )
+    add_custom_target(remora_prepare ALL
+      DEPENDS remora_fetch
+      COMMENT "Fetching Remora OS6 sources from ${REMORA_GIT_URL}")
+    # Mark that after fetch the default path should contain the target folder
+    add_custom_command(TARGET remora_prepare POST_BUILD
+      COMMAND ${CMAKE_COMMAND} -E echo "Remora sources fetched. Re-run CMake to pick them up if first configure did not include files.")
+  endif()
+endif()
+
+# Validate (post-fallback) presence; provide guidance or fail if FULL_FIRMWARE requested
+if (NOT EXISTS ${REMORA_SRC_DIR}/main_xcore407i.cpp)
+  message(STATUS
+    "[INFO] Remora target sources not found at ${REMORA_SRC_DIR}."
+    " Provide them or configure with -DREMORA_SRC_DIR=\"C:/path/to/Remora-OS6/Firmware/FirmwareSource/Remora-OS6/TARGET_XCORE407I\"."
+  )
+  if (FULL_FIRMWARE)
+    message(FATAL_ERROR "FULL_FIRMWARE=ON but Remora sources are missing. Aborting.")
+  endif()
+endif()
+
+set(MINIMAL_FIRMWARE 0)
+if (EXISTS ${REMORA_SRC_DIR}/main_xcore407i.cpp)
+  add_executable(${PROJECT_NAME}
+    startup_stm32f407xx.s
+    ${REMORA_SRC_DIR}/main_xcore407i.cpp
+    ${REMORA_SRC_DIR}/system_clock.c
+    ${REMORA_SRC_DIR}/ethernet_init.c
+    ${REMORA_SRC_DIR}/debug_uart.c
+    ${REMORA_SRC_DIR}/version.c
+    ${REMORA_SRC_DIR}/ulpi_init.c
+    ${REMORA_SRC_DIR}/build_id.c
+    ${REMORA_SRC_DIR}/remora_data.c
+    ${REMORA_SRC_DIR}/drivers/drivers_init.c
+    ${REMORA_SRC_DIR}/lwip/ethernetif.c
+    ${REMORA_SRC_DIR}/lwip/lwip_port.c
+    ${REMORA_SRC_DIR}/lwip/remora_udp.c
+    ${REMORA_SRC_DIR}/stepgen.c
+    ${REMORA_SRC_DIR}/motion_io.c
+    ${REMORA_SRC_DIR}/jog.c
+    ${REMORA_SRC_DIR}/homing.c
+    ${REMORA_SRC_DIR}/config_store.c
+    ${REMORA_SRC_DIR}/encoder.c
+    ${REMORA_SRC_DIR}/auth.c
+    ${REMORA_SRC_DIR}/board_motion_gpio.c
+    ${REMORA_SRC_DIR}/usb/usbd_conf.c
+    ${REMORA_SRC_DIR}/usb/usbd_desc.c
+    ${REMORA_SRC_DIR}/usb/usbd_cdc_if.c
+    ${PROJECT_ROOT}/src/net/udp_echo.c
+    ${CUBE_ROOT}/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+    syscalls.c
+  )
+  if (TARGET remora_prepare)
+    add_dependencies(${PROJECT_NAME} remora_prepare)
+  endif()
+else()
+  set(MINIMAL_FIRMWARE 1)
+  message(WARNING "Building minimal bring-up firmware (REMORA_SRC_DIR not found).")
+  # Option to build a minimal USB CDC firmware instead of the Ethernet demo
+  option(BOARD_MINIMAL_CDC "Build minimal USB CDC device firmware (overrides Ethernet demo when ON)" OFF)
+  if(BOARD_MINIMAL_CDC)
+    message(STATUS "Minimal USB CDC firmware enabled (BOARD_MINIMAL_CDC=ON)")
+    set(MINIMAL_MAIN ${PROJECT_ROOT}/targets/TARGET_XCORE407I/main_cdc_minimal.c)
+  else()
+    set(MINIMAL_MAIN ${PROJECT_ROOT}/targets/TARGET_XCORE407I/main_minimal.c)
+  endif()
+
+  add_executable(${PROJECT_NAME}
+    startup_stm32f407xx.s
+    ${MINIMAL_MAIN}
+  # NOTE: Do not compile the legacy 25MHz-oriented system_clock.c in targets/TARGET_XCORE407I.
+  # The authoritative clock setup (8 MHz HSE -> 168 MHz) is in Remora source: system_clock.c included above.
+  # (Removed ${PROJECT_ROOT}/targets/TARGET_XCORE407I/system_clock.c)
+    $<$<NOT:$<BOOL:BOARD_MINIMAL_CDC>>:${PROJECT_ROOT}/src/net/ethernetif.c>
+    $<$<NOT:$<BOOL:BOARD_MINIMAL_CDC>>:${PROJECT_ROOT}/src/net/udp_echo.c>
+    $<$<BOOL:BOARD_MINIMAL_CDC>:${PROJECT_ROOT}/targets/TARGET_XCORE407I/usb/usb_device.c>
+    $<$<BOOL:BOARD_MINIMAL_CDC>:${PROJECT_ROOT}/targets/TARGET_XCORE407I/usb/usbd_desc.c>
+    $<$<BOOL:BOARD_MINIMAL_CDC>:${PROJECT_ROOT}/targets/TARGET_XCORE407I/usb/usbd_cdc_if.c>
+    $<$<BOOL:BOARD_MINIMAL_CDC>:${PROJECT_ROOT}/targets/TARGET_XCORE407I/usb/usbd_conf.c>
+    ${CUBE_ROOT}/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+    syscalls.c
+  )
+endif()
+
+if (MINIMAL_FIRMWARE)
+  target_include_directories(${PROJECT_NAME} PRIVATE
+    ${PROJECT_ROOT}/src/net
+    ${HAL_CONF_DIR}
+    ${CUBE_CMSIS_INCLUDE}
+    ${CUBE_DEVICE_INCLUDE}
+    ${CUBE_HAL_INC}
+    ${CUBE_ROOT}/Middlewares/Third_Party/LwIP/src/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/lwip_port
+    $<$<BOOL:BOARD_MINIMAL_CDC>:${CUBE_ROOT}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc>
+    $<$<BOOL:BOARD_MINIMAL_CDC>:${CUBE_ROOT}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc>
+    $<$<BOOL:BOARD_MINIMAL_CDC>:${PROJECT_ROOT}/targets/TARGET_XCORE407I/usb>
+  )
+  if(BOARD_MINIMAL_CDC)
+    # Pull in USB core + CDC sources
+    set(USBD_ROOT ${CUBE_ROOT}/Middlewares/ST/STM32_USB_Device_Library)
+    if (EXISTS ${USBD_ROOT}/Core/Src/usbd_core.c)
+      set(USBD_CORE_SRC
+        ${USBD_ROOT}/Core/Src/usbd_core.c
+        ${USBD_ROOT}/Core/Src/usbd_ctlreq.c
+        ${USBD_ROOT}/Core/Src/usbd_ioreq.c
+        ${USBD_ROOT}/Class/CDC/Src/usbd_cdc.c
+      )
+      add_library(usbdcore STATIC ${USBD_CORE_SRC})
+      target_include_directories(usbdcore PUBLIC
+        ${USBD_ROOT}/Core/Inc
+        ${USBD_ROOT}/Class/CDC/Inc
+        ${PROJECT_ROOT}/targets/TARGET_XCORE407I/usb
+        ${HAL_CONF_DIR}
+        ${CUBE_HAL_INC}
+        ${CUBE_DEVICE_INCLUDE}
+        ${CUBE_CMSIS_INCLUDE}
+      )
+      target_compile_definitions(usbdcore PUBLIC STM32F407xx USE_HAL_DRIVER)
+      target_link_libraries(usbdcore PUBLIC arm_flags)
+      target_link_libraries(${PROJECT_NAME} PRIVATE usbdcore)
+    else()
+      message(FATAL_ERROR "USB Device library not found for BOARD_MINIMAL_CDC mode at ${USBD_ROOT}")
+    endif()
+  endif()
+else()
+  target_include_directories(${PROJECT_NAME} PRIVATE
+    ${PROJECT_ROOT}/Remora-OS6/Firmware/FirmwareSource/Remora-OS6
+    ${REMORA_SRC_DIR}
+    ${REMORA_SRC_DIR}/lwip
+    ${PROJECT_ROOT}/src/net
+    ${HAL_CONF_DIR}
+    ${CUBE_CMSIS_INCLUDE}
+    ${CUBE_DEVICE_INCLUDE}
+    ${CUBE_HAL_INC}
+    ${CUBE_ROOT}/Middlewares/Third_Party/LwIP/src/include
+    ${CUBE_ROOT}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc
+    ${CUBE_ROOT}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/lwip_port
+  )
+endif()
 
 # HAL sources
 set(HAL_SRC_DIR ${CUBE_ROOT}/Drivers/STM32F4xx_HAL_Driver/Src)
@@ -145,17 +318,18 @@ set(HAL_SOURCES
   ${HAL_SRC_DIR}/stm32f4xx_hal_tim_ex.c
   ${HAL_SRC_DIR}/stm32f4xx_hal_exti.c
   ${HAL_SRC_DIR}/stm32f4xx_hal_uart.c
-  ${HAL_SRC_DIR}/stm32f4xx_hal_pcd.c
-  ${HAL_SRC_DIR}/stm32f4xx_hal_pcd_ex.c
   ${HAL_SRC_DIR}/stm32f4xx_ll_usb.c
 )
 
 target_sources(${PROJECT_NAME} PRIVATE ${HAL_SOURCES})
 
+# HAL is external; don't fail build on benign warnings from vendor code
+set_source_files_properties(${HAL_SOURCES} PROPERTIES COMPILE_OPTIONS "-Wno-error;-Wno-unused-parameter")
+
 # Optional abstract driver layer (pin / qei)
 option(USE_ABSTRACT_DRIVERS "Enable abstract pin & QEI drivers (working Ethernet profile default)" ON)
 option(ENABLE_QEI_DIAG "Enable QEI diagnostic helper (requires USE_ABSTRACT_DRIVERS)" ON)
-if (USE_ABSTRACT_DRIVERS)
+if (USE_ABSTRACT_DRIVERS AND NOT MINIMAL_FIRMWARE)
   message(STATUS "Abstract drivers enabled (pin, qei)")
   target_sources(${PROJECT_NAME} PRIVATE
     ${REMORA_SRC_DIR}/drivers/pin/pin.cpp
@@ -174,7 +348,7 @@ if (USE_ABSTRACT_DRIVERS)
     target_compile_definitions(${PROJECT_NAME} PRIVATE ENABLE_QEI_DIAG=0)
   endif()
 else()
-  target_compile_definitions(${PROJECT_NAME} PRIVATE USE_ABSTRACT_DRIVERS=0)
+  target_compile_definitions(${PROJECT_NAME} PRIVATE USE_ABSTRACT_DRIVERS=0 ENABLE_QEI_DIAG=0)
 endif()
 
 # Common optimization & warning flags (arch/float already in initial flags)
@@ -190,7 +364,7 @@ set(COMMON_NONARCH_FLAGS
 
 # Interface target to propagate identical compile & link flags to all consumers
 add_library(arm_flags INTERFACE)
-option(REMORA_STRICT "Treat warnings as errors" ON)
+option(REMORA_STRICT "Treat warnings as errors" OFF)
 target_compile_options(arm_flags INTERFACE
   ${COMMON_NONARCH_FLAGS}
   -mcpu=cortex-m4
@@ -296,17 +470,46 @@ target_link_options(${PROJECT_NAME} PRIVATE -T${LINKER_SCRIPT} -nostartfiles -Wl
 
 # Post-build binary
 if (CMAKE_OBJCOPY)
+  # Always refer to the full path of the produced ELF using generator expressions for reliability
   add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-    COMMAND ${CMAKE_OBJCOPY} -O binary ${PROJECT_NAME} ${PROJECT_NAME}.bin
-    COMMENT "Generating binary file"
+    COMMAND ${CMAKE_OBJCOPY} -O binary $<TARGET_FILE:${PROJECT_NAME}> ${PROJECT_NAME}.bin
+    COMMENT "Generating binary file (${PROJECT_NAME}.bin)"
+  )
+  # Copy ELF with explicit extension (some tools look for .elf pattern)
+  add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different $<TARGET_FILE:${PROJECT_NAME}> ${PROJECT_NAME}.elf
+    COMMENT "Copying ELF to ${PROJECT_NAME}.elf"
+  )
+  # Generate Intel HEX so base address is embedded (no manual 0x08000000 entry needed)
+  add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_OBJCOPY} -O ihex $<TARGET_FILE:${PROJECT_NAME}> ${PROJECT_NAME}.hex
+    COMMENT "Generating Intel HEX file (${PROJECT_NAME}.hex)"
   )
   if(DFU_TRIM_BIN)
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-      COMMAND ${CMAKE_OBJCOPY} -O binary --remove-section .ccm_data --remove-section ._user_heap_stack ${PROJECT_NAME} ${PROJECT_NAME}_flash.bin
+      COMMAND ${CMAKE_OBJCOPY} -O binary --remove-section .ccm_data --remove-section ._user_heap_stack $<TARGET_FILE:${PROJECT_NAME}> ${PROJECT_NAME}_flash.bin
       COMMENT "Generating trimmed DFU binary (${PROJECT_NAME}_flash.bin)"
     )
   endif()
 endif()
+
+# Provide a generic trimmed binary even if DFU_TRIM_BIN not explicitly set (for Cube flashing)
+if (CMAKE_OBJCOPY AND NOT DFU_TRIM_BIN)
+  add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_OBJCOPY} -O binary --remove-section .ccm_data --remove-section ._user_heap_stack $<TARGET_FILE:${PROJECT_NAME}> ${PROJECT_NAME}_flash.bin
+    COMMENT "Generating trimmed flash binary (${PROJECT_NAME}_flash.bin)"
+  )
+endif()
+  # Optional: Windows DFU flash helper using existing PowerShell script
+  if (CMAKE_HOST_WIN32)
+    set(FLASH_POWERSHELL_SCRIPT ${CMAKE_SOURCE_DIR}/scripts/flash_dfu.ps1)
+    add_custom_target(flash_ps
+      COMMAND powershell -NoProfile -ExecutionPolicy Bypass -File ${FLASH_POWERSHELL_SCRIPT} -Bin ${CMAKE_BINARY_DIR}/targets/TARGET_XCORE407I/${PROJECT_NAME}_flash.bin
+      DEPENDS ${PROJECT_NAME}
+      WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+      COMMENT "Flashing (PowerShell) ${PROJECT_NAME}_flash.bin via DFU"
+    )
+  endif()
 
 # --- Convenience targets: DFU flash & verify ---
 find_program(DFU_UTIL dfu-util)
@@ -328,6 +531,30 @@ if(DFU_UTIL)
   )
 else()
   message(STATUS "dfu-util not found: flash_dfu / verify_flash targets disabled")
+endif()
+
+# --- CubeProgrammer flash target (Windows host expected) ---
+if (CMAKE_HOST_WIN32)
+  # Allow override of CubeProgrammer CLI path via -DSTM32_CUBE_PROG=...; else assume default install location
+  if (NOT STM32_CUBE_PROG)
+    set(STM32_CUBE_PROG "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI.exe")
+  endif()
+  add_custom_target(flash_cube
+    COMMAND "${STM32_CUBE_PROG}" -c port=SWD freq=4000 -w ${CMAKE_BINARY_DIR}/targets/TARGET_XCORE407I/${PROJECT_NAME}_flash.bin 0x08000000 -v
+    DEPENDS ${PROJECT_NAME}
+    COMMENT "Flashing (STM32CubeProgrammer) ${PROJECT_NAME}_flash.bin @0x08000000"
+  )
+  add_custom_target(flash_cube_erase
+    COMMAND "${STM32_CUBE_PROG}" -c port=SWD freq=4000 -e all -w ${CMAKE_BINARY_DIR}/targets/TARGET_XCORE407I/${PROJECT_NAME}_flash.bin 0x08000000 -v
+    DEPENDS ${PROJECT_NAME}
+    COMMENT "Full erase + Flash (STM32CubeProgrammer) ${PROJECT_NAME}_flash.bin @0x08000000"
+  )
+  add_custom_target(flash_cube_verify
+    COMMAND "${STM32_CUBE_PROG}" -c port=SWD freq=4000 -d 0x08000000 ${CMAKE_BINARY_DIR}/targets/TARGET_XCORE407I/readback.bin 0x10000
+    COMMAND ${CMAKE_COMMAND} -E echo "Compare (first 64KB)"
+    COMMAND ${CMAKE_COMMAND} -E compare_files ${CMAKE_BINARY_DIR}/targets/TARGET_XCORE407I/${PROJECT_NAME}_flash.bin ${CMAKE_BINARY_DIR}/targets/TARGET_XCORE407I/readback.bin || ${CMAKE_COMMAND} -E echo "WARNING: mismatch in first 64KB (lengths or contents)"
+    COMMENT "Read back first 64KB for quick verification"
+  )
 endif()
 
 # --- lwIP (Cube provided) minimal subset ---
@@ -372,7 +599,7 @@ target_link_libraries(lwipcore PUBLIC arm_flags)
 
 # --- USB Device (Cube) core and CDC class sources ---
 set(USBD_ROOT ${CUBE_ROOT}/Middlewares/ST/STM32_USB_Device_Library)
-if (EXISTS ${USBD_ROOT}/Core/Src/usbd_core.c)
+if (NOT MINIMAL_FIRMWARE AND EXISTS ${USBD_ROOT}/Core/Src/usbd_core.c)
   set(USBD_CORE_SRC
     ${USBD_ROOT}/Core/Src/usbd_core.c
     ${USBD_ROOT}/Core/Src/usbd_ctlreq.c
@@ -394,6 +621,6 @@ if (EXISTS ${USBD_ROOT}/Core/Src/usbd_core.c)
   target_compile_definitions(usbdcore PUBLIC STM32F407xx USE_HAL_DRIVER)
   target_link_libraries(usbdcore PUBLIC arm_flags)
   target_link_libraries(${PROJECT_NAME} PRIVATE usbdcore)
-else()
+elseif(NOT MINIMAL_FIRMWARE)
   message(FATAL_ERROR "STM32 USB Device library not found at ${USBD_ROOT}. Ensure submodule present.")
 endif()

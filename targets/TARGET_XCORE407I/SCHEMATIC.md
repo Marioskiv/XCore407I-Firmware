@@ -28,10 +28,17 @@ Schematic block: “USB FS OTG schematic”
 ## USB HS (ULPI, USB3300)
 Schematic block: “USB HS ULPI schematic”
 
-- ULPI lines are routed to MCU but share pins with Ethernet TX:
-  - ULPI_D5 `PB12` and ULPI_D6 `PB13` conflict with RMII `TXD0/TXD1`.
-  - Firmware disables ULPI by default (`BOARD_ENABLE_ULPI=0`).
-- If enabling ULPI, Ethernet must be disabled due to shared pins.
+- ULPI pin map (from schematic):
+  - `ULPI_CLK` → `PA5`
+  - `ULPI_STP` → `PC0`
+  - `ULPI_DIR` → `PC2`
+  - `ULPI_NXT` → `PC3`
+  - `ULPI_D0..D7` → `PA3, PB0, PB1, PB10, PB11, PB12, PB13, PB5`
+  - USB3300 `VBUS` connected to HS VBUS rail via MIC2075-1 switch.
+  - USB3300 `CPEN` tied to HS VBUS switch EN (see below). Reset line present on PHY but not used in firmware.
+- Pin conflicts with Ethernet TX:
+  - ULPI_D5 `PB12` and ULPI_D6 `PB13` share with RMII `TXD0/TXD1`.
+  - Firmware disables ULPI by default (`BOARD_ENABLE_ULPI=0`). If enabling ULPI, disable Ethernet.
 
 ## Ethernet RMII (DP83848I)
 Schematic block: “ETHERNET DP83848I schematic”
@@ -48,7 +55,7 @@ Schematic block: “ETHERNET DP83848I schematic”
   - `TXD0` → `PB12`
   - `TXD1` → `PB13`
   - `RESET_N` tied to MCU `NRST` in schematic → No independent GPIO reset.
-  - `INT/PWRDOWN` not routed → Firmware leaves PHY interrupt unused.
+  - `INT/PWRDOWN` not routed to a documented MCU pin in provided summary → Firmware leaves PHY interrupt unused.
 - Link LEDs are on RJ45; firmware provides UART/link LED patterns for diagnostics.
 
 ## NAND Flash (K9F1G08U0C via FSMC, optional)
@@ -85,6 +92,10 @@ Schematic block: “NAND FLASH schematic”
 - ULPI vs Ethernet TX (PB12/PB13): cannot be used simultaneously.
 - NAND vs Motion ENA (PD0/PD1): enable `-DMOTION_PROFILE_FSMC_SAFE=1` or disable NAND.
 - `USE_PG11_TXEN`: select TX_EN pin variant (default 0 = `PB11`).
+
+## VBUS Power Switches (FS/HS)
+- MIC2075-2 (FS): EN/FLG are present on schematic but not used by firmware in device-only mode. VBUS sense uses `PA9` and the stack is configured with VBUS sensing disabled; we do not drive 5V out.
+- MIC2075-1 (HS): EN is tied with USB3300 `CPEN`. Firmware does not currently control or read EN/FLG pins; HS is typically disabled due to RMII conflict.
 
 ## Quick Verification Checklist
 1) USB: Enumerates as CDC ACM `0483:5740`.

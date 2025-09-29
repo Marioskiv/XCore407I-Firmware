@@ -54,6 +54,16 @@ Helper script (does the same):
 ```
 
 Add more later as needed (example FreeRTOS):
+Using an existing local STM32CubeF4 instead of submodule
+If you already have STM32CubeF4 downloaded (e.g. at `C:\Users\mario\OneDrive\Desktop\STM32CubeF4-master\STM32CubeF4-master`), you can point CMake to it to avoid cloning the submodule:
+
+```powershell
+cmake -S . -B build -DCUBE_ROOT="C:/Users/mario/OneDrive/Desktop/STM32CubeF4-master/STM32CubeF4-master"
+cmake --build build -j
+```
+
+Note: The path must contain `Drivers/` and `Middlewares/` folders.
+
 ```bash
 git submodule update --init st/STM32CubeF4/Middlewares/Third_Party/FreeRTOS
 ```

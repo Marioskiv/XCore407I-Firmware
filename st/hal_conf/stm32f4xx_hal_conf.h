@@ -14,10 +14,20 @@
 #define HAL_PCD_MODULE_ENABLED
 
 /* ########################## HSE/HSI Values ############################## */
-#define HSE_VALUE    ((uint32_t)8000000U)
+#define HSE_VALUE    ((uint32_t)25000000U) /* Updated to match XCore407I 25 MHz external crystal */
 #define HSI_VALUE    ((uint32_t)16000000U)
 #define LSI_VALUE    ((uint32_t)32000U)
 #define LSE_VALUE    ((uint32_t)32768U)
+/* Add missing standard HAL timing/clock macros used by RCC */
+#ifndef HSE_STARTUP_TIMEOUT
+#define HSE_STARTUP_TIMEOUT    100U
+#endif
+#ifndef LSE_STARTUP_TIMEOUT
+#define LSE_STARTUP_TIMEOUT    5000U
+#endif
+#ifndef EXTERNAL_CLOCK_VALUE
+#define EXTERNAL_CLOCK_VALUE   12288000U
+#endif
 
 #define VDD_VALUE                    ((uint32_t)3300U)
 #define TICK_INT_PRIORITY            ((uint32_t)0x0FU)
@@ -29,6 +39,20 @@
 /* Ethernet configuration parameters */
 #define ETH_RXBUFNB        ((uint32_t)4U)
 #define ETH_TXBUFNB        ((uint32_t)4U)
+
+/* Ethernet PHY access timeouts and reset delay
+ * These are required by the HAL ETH driver (stm32f4xx_hal_eth.c).
+ * Values are aligned with STM32CubeF4 project templates.
+ */
+#ifndef PHY_RESET_DELAY
+#define PHY_RESET_DELAY                 (0x000000FFU)
+#endif
+#ifndef PHY_READ_TO
+#define PHY_READ_TO                     (0x0000FFFFU)
+#endif
+#ifndef PHY_WRITE_TO
+#define PHY_WRITE_TO                    (0x0000FFFFU)
+#endif
 
 /* Debug assert disabled for size */
 #ifdef  USE_FULL_ASSERT

@@ -45,6 +45,24 @@
 				"$gcc"
 			],
 			"group": "build"
+		},
+		{
+			"label": "configure-minimal",
+			"type": "shell",
+			"command": "cmake -S targets/TARGET_XCORE407I -B build-min -DCMAKE_BUILD_TYPE=RelWithDebInfo",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "configure-minimal",
+			"type": "shell",
+			"command": "cmake -S targets/TARGET_XCORE407I -B build-min -G \"Ninja\" -DCMAKE_BUILD_TYPE=RelWithDebInfo",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
 		}
 	]
 }

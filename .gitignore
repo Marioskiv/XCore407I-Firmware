@@ -1,0 +1,49 @@
+# Firmware project .gitignore
+
+# CMake / build trees (we keep a clean repo)
+/build/
+/build-*/
+/build_cdc/
+/build_cdc*/
+/build-target/
+/build-win/
+/build-vs/
+/build-ninja/
+/build-25mhz/
+
+# Generic build artifacts
+CMakeCache.txt
+CMakeFiles/
+*.o
+*.obj
+*.d
+*.a
+*.lib
+*.dll
+*.exe
+*.map
+*.bin
+*.hex
+*.lst
+*.dis
+*.log
+*.tmp
+*.bak
+*~
+
+# Ninja
+build.ninja
+.ninja_log
+.ninja_deps
+
+# VSCode (keep tasks.json)
+.vscode/launch.json
+.vscode/settings.json
+
+# Python bytecode (if any helper scripts)
+__pycache__/
+*.py[cod]
+
+# OS files
+Thumbs.db
+Desktop.ini

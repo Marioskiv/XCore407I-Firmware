@@ -1,5 +1,6 @@
 #include "stm32f4xx_hal.h"
 #include "lwip/opt.h"
+#include "lwip/err.h"
 #include "lwip/pbuf.h"
 #include "netif/etharp.h"
 #include "ethernetif.h"
@@ -7,7 +8,11 @@
 #include <string.h>
 
 /* Reuse existing HAL ETH handle and descriptor initialization from ethernet_init.c */
+#if defined(__GNUC__)
+__attribute__((weak)) ETH_HandleTypeDef heth; /* expected from ethernet_init.c */
+#else
 extern ETH_HandleTypeDef heth; /* defined in ethernet_init.c */
+#endif
 
 /* We only supply minimal wrappers to feed frames to lwIP using existing low-level driver. */
 

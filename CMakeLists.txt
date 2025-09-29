@@ -11,10 +11,14 @@ project(XCORE407I_SUPER LANGUAGES NONE)
 
 add_subdirectory(targets/TARGET_XCORE407I)
 
-# Pin map verification helper target (runs after configuration stage manually)
-find_package(Python3 COMPONENTS Interpreter REQUIRED)
-add_custom_target(verify_pin_maps
-	COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/scripts/verify_pin_maps.py
-	WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-	COMMENT "Verifying pin map CSV files are synchronized with board_xcore407i.h"
-)
+# Pin map verification helper target (optional if Python3 present)
+find_package(Python3 COMPONENTS Interpreter QUIET)
+if (Python3_Interpreter_FOUND)
+	add_custom_target(verify_pin_maps
+		COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/scripts/verify_pin_maps.py
+		WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+		COMMENT "Verifying pin map CSV files are synchronized with board_xcore407i.h"
+	)
+else()
+	message(STATUS "Python3 not found; skipping verify_pin_maps helper target")
+endif()

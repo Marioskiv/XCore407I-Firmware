@@ -1,0 +1,6 @@
+[submodule "st/STM32CubeF4"]
+	path = st/STM32CubeF4
+	url = https://github.com/STMicroelectronics/STM32CubeF4.git
+[submodule "Remora-OS6"]
+	path = Remora-OS6
+	url = https://github.com/scottalford75/Remora-OS6.git

@@ -1,4 +1,13 @@
-/* Linker script for STM32F407IGT6 (1MB Flash, 192KB RAM: 128KB SRAM + 64KB CCM) */
+/* Linker script for STM32F407IGT6
+ * Flash: 1MB  (0x0800_0000 - 0x080F_FFFF)
+ * SRAM : 128KB main system RAM (SRAM1+SRAM2) at 0x2000_0000
+ * CCM  : 64KB Core Coupled Memory at 0x1000_0000 (tightly coupled, no DMA access)
+ *
+ * Requirement (user request):
+ *   FLASH (rx)  ORIGIN = 0x08000000, LENGTH = 1024K
+ *   RAM (xrw)   ORIGIN = 0x20000000, LENGTH = 128K
+ * -> Already satisfied below. CCM kept as separate NOLOAD region.
+ */
 MEMORY
 {
   FLASH (rx)      : ORIGIN = 0x08000000, LENGTH = 1024K
@@ -12,14 +21,16 @@ _estack = ORIGIN(RAM) + LENGTH(RAM); /* Top of main SRAM */
 /* Sections */
 SECTIONS
 {
+  /* Vector table placed at start of Flash (0x0800_0000) */
   .isr_vector :
   {
-    KEEP(*(.isr_vector))
+    KEEP(*(.isr_vector)) /* startup_stm32f407xx.s provides this */
   } > FLASH
 
   .text :
   {
-    *(.isr_vector*)
+    /* NOTE: Removed wildcard re-capture of .isr_vector* to avoid any accidental
+     * duplicate placement or future extended naming collisions. */
     *(.text*)
     *(.rodata*)
     *(.glue_7)

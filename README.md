@@ -59,6 +59,43 @@ cmake -DUSE_PG11_TXEN=ON -DETH_HW_CHECKSUM=ON -DCMAKE_BUILD_TYPE=Release ..
 
 Example enabling NAND with safe motion remap:
 
+1. Connect the board to a Windows host. If the ST VCP driver isn't installed, install STSW-STM32102.
+2. The device enumerates as VID:PID 0483:5740 with product string "XCore407I CDC".
+3. Open PowerShell and list the COM port:
+  ```powershell
+  Get-CimInstance Win32_SerialPort | Where-Object {$_.PNPDeviceID -like '*VID_0483&PID_5740*'} | Select-Object Name,DeviceID,Description
+  ```
+4. Use any terminal (115200 8N1) and type characters; they should echo back.
+
+Clock note: System clock derives from 25 MHz HSE (PLLM=25, PLLN=336, PLLP=2). USB 48 MHz comes from PLLQ=7.
+
+### Ethernet (DP83848I RMII) Validation
+RMII pin mapping (schematic verified):
+
+| Signal | MCU Pin |
+|--------|---------|
+| REF_CLK | PA1 |
+| MDIO | PA2 |
+| RX_DV | PA7 |
+| MDC | PC1 |
+| RXD0 | PC4 |
+| RXD1 | PC5 |
+| TX_EN | PB11 (or PG11 if built with -DUSE_PG11_TXEN=1) |
+| TXD0 | PB12 |
+| TXD1 | PB13 |
+
+Bring-up sequence:
+1. Firmware scans PHY addresses 0..31; first responding ID becomes active.
+2. Validates DP83848I OUI (ID1=0x2000, ID2 & 0xFFF0 == 0x5C90).
+3. Starts autonegotiation; link status is polled for up to 3s.
+4. After link-up it updates MACCR for speed/duplex and issues a gratuitous ARP.
+
+Quick host tests (replace IP with static or DHCP-assigned):
+```powershell
+ping 192.168.1.123
+# Optional UDP broadcast test: use Wireshark to observe periodic debug frames.
+```
+
 ```bash
 cmake -DBOARD_ENABLE_NAND=ON -DMOTION_PROFILE_FSMC_SAFE=ON -DCMAKE_BUILD_TYPE=Release ..
 ```
